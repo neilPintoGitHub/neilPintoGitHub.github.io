@@ -1,0 +1,23 @@
+stem: first demo, then land van ons, then podcast trailer, with arrows
+
+main page : remove opdrachtgevers section, create testimonials section with arrows
+------------------------------------------------------------------------------------------
+info for the bottom of the page (not in order of appearance)
+- contact
+------------------------------------------------------------------------------------------
+
+done :
+  - added footer to all the pages
+
+  - main :
+     - removed 2nd facepic photo
+     - removed opdrachtgevers section
+     - added testimonials (with arrows)
+
+still to do:
+  - stem :
+     - add audio/video files (1: demo, 2: Land van Ons, 3: Podcast trailer) .. with arrows
+
+need :
+  - faded out hi-res image for main page
+  - linkedin page URL
