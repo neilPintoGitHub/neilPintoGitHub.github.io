@@ -1,23 +1,34 @@
 stem: first demo, then land van ons, then podcast trailer, with arrows
-
-main page : remove opdrachtgevers section, create testimonials section with arrows
 ------------------------------------------------------------------------------------------
 info for the bottom of the page (not in order of appearance)
 - contact
 ------------------------------------------------------------------------------------------
 
-done :
-  - added footer to all the pages
+done:
+  - ALL:
+     - added a (draft) footer to all the pages:
+        - it has a temporary ver-nr there "vXXX" .. pls ignore that for now
 
-  - main :
+  - MAIN:
      - removed 2nd facepic photo
      - removed opdrachtgevers section
      - added testimonials (with arrows)
 
+
 still to do:
-  - stem :
+  - STEM:
      - add audio/video files (1: demo, 2: Land van Ons, 3: Podcast trailer) .. with arrows
 
-need :
-  - faded out hi-res image for main page
-  - linkedin page URL
+  - ALL:
+     - make the website look better when viewed on smaller screens and/or phones
+
+  - OVER MIJ:
+     - replace "Contact" => "Over Mij"
+
+
+need from you:
+  - faded out hi-res image for main page:
+     - as you can perhaps see, on the MAIN page .. the large text is not very visible with the full-color photo
+
+  - linkedin page URL:
+     - i.e. to which website should I redirect, when someone clicks on the "In" in the footer?

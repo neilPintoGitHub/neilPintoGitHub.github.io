@@ -50,7 +50,7 @@
               <td width="10%">&nbsp;</td>
               <td width="10%" class="jwArrowsLight" onmouseover="this.className='jwArrowsDark';" onmouseout="this.className='jwArrowsLight';" onclick="jwShowTestimonialPrev();">&lt;</td>
               <td id="jw_testimonial_content">
-                <span class="jwTestimonial1">&ldquo;Jorien wist van mijn complexe videopitch een aangename luisterervaring te maken.&rdquo;</span><br/><br/>
+                <span class="jwTestimonial1a">&ldquo;Jorien wist van mijn complexe videopitch een aangename luisterervaring te maken.&rdquo;</span><br/><br/><br/>
                 <span class="jwTestimonial2">Martine de Ridder</span>
                 <span class="jwTestimonial3">ABN Amro</span>
               </td>
@@ -72,7 +72,7 @@
           <div class="jwFooter" style="margin-left:30px;">KvK : 86577468</div>
           <div class="jwFooter" style="margin-left:30px;">BTW-id : NL004274055B92</div>
           <div class="jwFooter" style="margin-left:60px;"><img src="images/jw000__footer__linkedin.png" alt="in" height="20px"></div>
-          <div class="jwFooter" style="margin-left:60px;">v20221123.d</div>
+          <div class="jwFooter" style="margin-left:60px;">v20221123.e</div>
         </td>
       </tr>
     </table>
@@ -102,10 +102,11 @@
     jwTestimonialComp[4] = "Land van Ons";
 
     function showTestimonial(nr)
-    {
-      document.getElementById("jw_testimonial_content").innerHTML =   '<span class="jwTestimonial1">&ldquo;' + jwTestimonialText[nr] + '&rdquo;</span><br/><br/>'
-                                                                    + '<span class="jwTestimonial2">'        + jwTestimonialAuth[nr] + '</span>'
-                                                                    + '<span class="jwTestimonial3">'        + jwTestimonialComp[nr] + '</span>'
+    { var newTestimonialText = jwTestimonialText[nr].replaceAll(' ', ' </span><span class="jwTestimonial1">');
+
+      document.getElementById("jw_testimonial_content").innerHTML =   '<span class="jwTestimonial1"> &ldquo;' + newTestimonialText    + '&rdquo; </span><br/><br/><br/>'
+                                                                    + '<span class="jwTestimonial2">'         + jwTestimonialAuth[nr] + '</span>'
+                                                                    + '<span class="jwTestimonial3">'         + jwTestimonialComp[nr] + '</span>'
     }
 
     function jwShowTestimonialPrev()
@@ -125,6 +126,8 @@
 
       showTestimonial(jwTestimonialNr);
     }
+
+    showTestimonial(1);
   </script>
 </body>
 </html>
