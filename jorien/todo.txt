@@ -4,31 +4,73 @@ info for the bottom of the page (not in order of appearance)
 - contact
 ------------------------------------------------------------------------------------------
 
+Hi Jorien,
+
+I've made the following changes:
+
+
 done:
+
   - ALL:
-     - added a (draft) footer to all the pages:
-        - it has a temporary ver-nr there "vXXX" .. pls ignore that for now
+     - headers:
+        - added the version nr.:
+           - it is now shown as "transparent" text next to the logo's text in the top-leftmost corner
+           - e.g. latest version should be = "v20221124.g"
+           - this is just a dummy value for now .. to see which version is showing up in the browser
+     - footers:
+        - removed the version nr.
+        - added the action to open your LinkedIn page when the "In" logo is clicked:
+           - this opens in a new tab/window
 
   - MAIN:
-     - removed 2nd facepic photo
-     - removed opdrachtgevers section
-     - added testimonials (with arrows)
+     - 1st pic:
+        - used "foto main page colour shopped whitewash.jpg"
+        - cropped it to 3500*1050px
+     - 2nd pic:
+        - used the pen-logo here
+        - i.e. ipv the 2nd facepic
+     - text:
+        - minor mods, as specified in "teksten website (1).docx"
+        - changed the hyperlink for the word ".. Neem [contact] met me ..":
+            - since the "Contact" page won't exist anymore
+            - pointed it to the "Tarieven" page instead
+     - opdrachtgevers:
+        - re-added this section as a placeholder (for now)
+        - need to add the logos and arrows here still
+     - testimonials:
+        - changed it such that the text appears all at once, ipv fade-in word-by-word
+        - changed the company for Martine from "ABN AMRO" => "Way Beyond Compare"
+
+  - PEN:
+     - 1st pic:
+        - used "foto pen page whitewash.jpg"
+        - cropped it to 3500*1050px
+     - text:
+        - minor mods, as specified in "teksten website (1).docx"
+
+  - TARIEVEN:
+     - text:
+        - minor mods, as specified in "teksten website (1).docx"
+
+  - CONTACT:
+     - removed this page
+
+  - OVER MIJ (new sub-page):
+     - 1st pic:
+        - used "pasfoto verbreed voor website whitewash.jpg"
+        - cropped it to 7000*2100px
+     - text:
+        - added, as specified in "teksten website (1).docx"
 
 
 still to do:
+
+  - MAIN:
+     - add opdrachtgevers logos
+
   - STEM:
      - add audio/video files (1: demo, 2: Land van Ons, 3: Podcast trailer) .. with arrows
 
   - ALL:
      - make the website look better when viewed on smaller screens and/or phones
 
-  - OVER MIJ:
-     - replace "Contact" => "Over Mij"
-
-
-need from you:
-  - faded out hi-res image for main page:
-     - as you can perhaps see, on the MAIN page .. the large text is not very visible with the full-color photo
-
-  - linkedin page URL:
-     - i.e. to which website should I redirect, when someone clicks on the "In" in the footer?

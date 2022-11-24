@@ -7,12 +7,12 @@
   <div class="jwHeaderDiv">
     <table class="jwHeaderTable">
       <tr>
-        <td width="50%"><a href="index.html">Logo Commponist</a> &nbsp; &nbsp; <span style="color:#CCCBE9;">v20221124.c</span></td>
+        <td width="50%"><a href="index.html">Logo Commponist</a> &nbsp; &nbsp; <span style="color:#CCCBE9;">v20221124.g</span></td>
         <td class="jwHeaderMenuItem"><a href="pages/stem.html">stem</a></td>
         <td class="jwHeaderMenuItem"><a href="pages/pen.html">pen</a></td>
         <td class="jwHeaderMenuItem"><a href="pages/presentatie.html">presentatie</a></td>
         <td class="jwHeaderMenuItem"><a href="pages/tarieven.html">tarieven</a></td>
-        <td class="jwHeaderMenuItem"><a href="pages/contact.html">contact</a></td>
+        <td class="jwHeaderMenuItem"><a href="pages/overmij.html">over mij</a></td>
       </tr>
     </table>
   </div>
@@ -32,12 +32,24 @@
         <td width="10%"> </td>
         <td width="40%" class="jwBody3">
           Een boodschap de wereld in slingeren is eenvoudig. Maar geh&oacute;&oacute;rd worden is veel moeilijker.
-          <br/><br/>Een overtuigende boodschap samenstellen is net als het componeren van muziek. Als communicatie componist maak ik van jouw verhaal een klinkende boodschap.
+          <br/><br/>Een overtuigende boodschap samenstellen is als het componeren van muziek. Als communicatie componist maak ik van jouw verhaal een klinkende boodschap.
           <br/><br/>Ik ben beschikbaar als voice-over, tekstschrijver en presentator van jouw media- of communicatiecampagne. Ik werk snel en secuur, vanuit mijn eigen studio of op locatie.
-          <br/><br/>Mijn stem, jouw geluid. Nieuwsgierig geworden? Neem <a href="pages/contact.html">contact</a> met me op voor de mogelijkheden.
+          <br/><br/>Mijn stem, jouw geluid. Nieuwsgierig geworden? Neem <a href="pages/tarieven.html">contact</a> met me op voor de mogelijkheden (jorien@commponist.nl / 06 21296919).
         </td>
-        <td width="40%" style="text-align:center;"><!-- <img src="images/jw001__profile_pic.jpg" alt="Jorien Wallast - Index - Profile pic" width="75%" style="text-align:center; vertical-align:top;"/> --> </td>
+        <td width="40%" style="text-align:center;"><img src="images/jw003__index_logo_pen.jpg" alt="Jorien Wallast - Index - Logo Pen" width="70%" style="text-align:center; vertical-align:top;"/></td>
         <td width="10%"> </td>
+      </tr>
+      <tr><td colspan="4">&nbsp;</td></tr>
+      <tr><td colspan="4">&nbsp;</td></tr>
+      <tr><td colspan="4">&nbsp;</td></tr>
+      <tr>
+        <td> </td>
+        <td colspan="2" class="jwBody3">
+          Ik heb gewerkt met:
+          <br/><br/>
+          [reel met opdrachtgevers logos]
+        </td>
+        <td> </td>
       </tr>
       <tr><td colspan="4">&nbsp;</td></tr>
       <tr><td colspan="4">&nbsp;</td></tr>
@@ -50,7 +62,7 @@
               <td width="10%">&nbsp;</td>
               <td width="10%" class="jwArrows" onclick="jwShowTestimonialPrev();">&lt;</td>
               <td id="jw_testimonial_content">
-                <span class="jwTestimonial1a">&ldquo;Jorien wist van mijn complexe videopitch een aangename luisterervaring te maken.&rdquo;</span><br/><br/><br/>
+                <span class="jwTestimonial1">&ldquo;Jorien wist van mijn complexe videopitch een aangename luisterervaring te maken.&rdquo;</span><br/><br/><br/>
                 <span class="jwTestimonial2">Martine de Ridder</span>
                 <span class="jwTestimonial3">ABN Amro</span>
               </td>
@@ -61,17 +73,23 @@
         </td>
         <td>&nbsp;</td>
       </tr>
+      <tr><td colspan="4">&nbsp;</td></tr>
+      <tr><td colspan="4">&nbsp;</td></tr>
+      <tr><td colspan="4">&nbsp;</td></tr>
       <tr>
-        <td colspan="4" style="text-align:center;" height="200px">
+        <td colspan="4" style="text-align:center;">
           korte tekst tarieven en knop naar contactform
         </td>
       </tr>
+      <tr><td colspan="4">&nbsp;</td></tr>
+      <tr><td colspan="4">&nbsp;</td></tr>
+      <tr><td colspan="4">&nbsp;</td></tr>
       <tr style="background-color:#CCCBE9;">
         <td colspan="4" height="70px">
           <div class="jwFooter" style="margin-left:30px;">&#169; 2022 Jorien Wallast Communicatie. Alle rechten voorbehouden.</div>
           <div class="jwFooter" style="margin-left:30px;">KvK : 86577468</div>
           <div class="jwFooter" style="margin-left:30px;">BTW-id : NL004274055B92</div>
-          <div class="jwFooter" style="margin-left:60px;"><img src="images/jw000__footer__linkedin.png" alt="in" height="20px"></div>
+          <div class="jwFooter" style="margin-left:60px;"><a href="https://www.linkedin.com/in/joriendelege/" target="_blank" rel="noopener noreferrer"><img src="images/jw000__footer__linkedin.png" alt="LinkedIn" height="20px"></a></div>
         </td>
       </tr>
     </table>
@@ -96,15 +114,15 @@
     jwTestimonialAuth[3] = "Thessa Meijlis";
     jwTestimonialAuth[4] = "Jan Postma";
 
-    jwTestimonialComp[1] = "ABN AMRO";
+    jwTestimonialComp[1] = "Way Beyond Compare";
     jwTestimonialComp[2] = "Klaenk";
     jwTestimonialComp[3] = "WISE Nederland";
     jwTestimonialComp[4] = "Land van Ons";
 
     function showTestimonial(nr)
-    { var newTestimonialText = jwTestimonialText[nr].replaceAll(' ', ' </span><span class="jwTestimonial1">');
+    { // var newTestimonialText = jwTestimonialText[nr].replaceAll(' ', ' </span><span class="jwTestimonial1">');
 
-      document.getElementById("jw_testimonial_content").innerHTML =   '<span class="jwTestimonial1"> &ldquo;' + newTestimonialText    + '&rdquo; </span><br/><br/><br/>'
+      document.getElementById("jw_testimonial_content").innerHTML =   '<span class="jwTestimonial1"> &ldquo;' + jwTestimonialText[nr] + '&rdquo; </span><br/><br/><br/>'
                                                                     + '<span class="jwTestimonial2">'         + jwTestimonialAuth[nr] + '</span>'
                                                                     + '<span class="jwTestimonial3">'         + jwTestimonialComp[nr] + '</span>'
     }

@@ -1,103 +1,108 @@
-.jwHeaderDiv                  { width:100%; height:30px; background-color:#CCCBE9; position:fixed; top:0; left:0; z-index:10; }
-.jwHeaderTable                { width:100%; height:100%; border:0px; cellpadding:0px; cellspacing:0px; }
-.jwHeaderMenuItem             { font-family:sans-serif; font-size:18px; width:10%; text-align:center; }
-.jwHeaderMenuItemFocused      { font-family:sans-serif; font-size:18px; width:10%; text-align:center; color:#000000; font-weight:bolder; }
+.jwHeaderDiv             { width:100%; height:30px; background-color:#CCCBE9; position:fixed; top:0; left:0; z-index:10; }
+.jwHeaderTable           { width:100%; height:100%; border:0px; cellpadding:0px; cellspacing:0px; }
+.jwHeaderMenuItem        { font-family:sans-serif; font-size:18px; width:10%; text-align:center; }
+.jwHeaderMenuItemFocused { font-family:sans-serif; font-size:18px; width:10%; text-align:center; color:#000000; font-weight:bolder; }
 
-.jwHdrLine1                   { font-family:"trebuchet ms",sans-serif; font-size:60px; font-weight:700; position:absolute; bottom:70px;  left:10%; display:block; color:#FFFFFF; }
-.jwHdrLine2                   { font-family:tahoma        ,sans-serif; font-size:40px; font-weight:500; position:absolute; bottom:30px;  left:10%; display:block; color:#FFFFFF; }
-.jwCreditLine                 { font-family:tahoma        ,sans-serif; font-size:12px; font-weight:100; position:absolute; bottom:10px; right:10%; display:block; color:#FFFFFF; }
+.jwHdrLine1              { font-family:"trebuchet ms",sans-serif; font-size:60px; font-weight:700; position:absolute; bottom:70px;  left:10%; display:block; color:#FFFFFF; }
+.jwHdrLine2              { font-family:tahoma        ,sans-serif; font-size:40px; font-weight:500; position:absolute; bottom:30px;  left:10%; display:block; color:#FFFFFF; }
+.jwCreditLine            { font-family:tahoma        ,sans-serif; font-size:12px; font-weight:100; position:absolute; bottom:10px; right:10%; display:block; color:#FFFFFF; }
 
-.jwBodyTable                  { width:100%; border:0px; cellpadding:2px; }
-.jwBody3                      { font-family:sans-serif; font-size:18px; text-align:justify; vertical-align:top; }
+.jwBodyTable             { width:100%; border:0px; cellpadding:2px; }
+.jwBody3                 { font-family:sans-serif; font-size:18px; text-align:justify; vertical-align:top; }
 
-.jwArrows                     { font-size:40px; font-weight:200; color:#CCCCCC; font-family:sans-serif; text-align:center; vertical-align: middle; }
-.jwArrows:hover               { font-size:42px; font-weight:400; color:#444444; cursor:pointer; }
+.jwArrows                { font-size:40px; font-weight:200; color:#CCCCCC; font-family:sans-serif; text-align:center; vertical-align: middle; }
+.jwArrows:hover          { font-size:42px; font-weight:400; color:#444444; cursor:pointer; }
 
-.jwTariffHdr                  { background-color:#0033A0; color:#FFFFFF; }
+.jwTariffHdr             { background-color:#0033A0; color:#FFFFFF; }
 
-.jwFooter                     { font-family:tahoma,sans-serif; font-size:14px; color:#888888; background-color:#CCCBE9; vertical-align:middle; margin-left:15px; display:inline; }
+.jwFooter                { font-family:tahoma,sans-serif; font-size:14px; color:#888888; background-color:#CCCBE9; vertical-align:middle; margin-left:15px; display:inline; }
 
-a:link                        { text-decoration:none; }
-a:visited                     { text-decoration:none; }
-a:hover                       { text-decoration:none; color:#FF8F1C; }
-a:active                      { text-decoration:none; }
+a:link                   { text-decoration:none; }
+a:visited                { text-decoration:none; }
+a:hover                  { text-decoration:none; color:#FF8F1C; }
+a:active                 { text-decoration:none; }
 
-.jwTestimonial1a              { font-family:tahoma,sans-serif; font-size:24px; text-align:center; vertical-align:top; font-style:italic; color:#888888; display:block; }
-.jwTestimonial2               { font-family:tahoma,sans-serif; font-size:20px; text-align:center; vertical-align:top; font-style:bolder; color:#111111; display:block; }
-.jwTestimonial3               { font-family:tahoma,sans-serif; font-size:16px; text-align:center; vertical-align:top; font-style:italic; color:#666666; display:block; }
+.jwTestimonial1          { font-family:tahoma,sans-serif; font-size:24px; text-align:center; vertical-align:top; font-style:italic; color:#888888; display:block; }
+.jwTestimonial2          { font-family:tahoma,sans-serif; font-size:20px; text-align:center; vertical-align:top; font-style:bolder; color:#111111; display:block; }
+.jwTestimonial3          { font-family:tahoma,sans-serif; font-size:16px; text-align:center; vertical-align:top; font-style:italic; color:#666666; display:block; }
 
-.jwTestimonial1               { font-family:tahoma,sans-serif; font-size:24px; text-align:center; vertical-align:top; font-style:italic; color:#888888; display:inline; opacity:0; filter: blur(4px); }
-.jwTestimonial1:nth-child(01) { animation: fade-in 1s 00.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(02) { animation: fade-in 1s 00.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(03) { animation: fade-in 1s 00.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(04) { animation: fade-in 1s 00.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(05) { animation: fade-in 1s 01.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(06) { animation: fade-in 1s 01.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(07) { animation: fade-in 1s 01.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(08) { animation: fade-in 1s 01.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(09) { animation: fade-in 1s 01.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(10) { animation: fade-in 1s 02.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(11) { animation: fade-in 1s 02.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(12) { animation: fade-in 1s 02.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(13) { animation: fade-in 1s 02.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(14) { animation: fade-in 1s 02.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(15) { animation: fade-in 1s 03.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(16) { animation: fade-in 1s 03.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(17) { animation: fade-in 1s 03.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(18) { animation: fade-in 1s 03.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(19) { animation: fade-in 1s 03.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(20) { animation: fade-in 1s 04.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(21) { animation: fade-in 1s 04.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(22) { animation: fade-in 1s 04.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(23) { animation: fade-in 1s 04.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(24) { animation: fade-in 1s 04.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(25) { animation: fade-in 1s 05.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(26) { animation: fade-in 1s 05.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(27) { animation: fade-in 1s 05.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(28) { animation: fade-in 1s 05.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(29) { animation: fade-in 1s 05.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(30) { animation: fade-in 1s 06.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(31) { animation: fade-in 1s 06.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(32) { animation: fade-in 1s 06.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(33) { animation: fade-in 1s 06.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(34) { animation: fade-in 1s 06.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(35) { animation: fade-in 1s 07.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(36) { animation: fade-in 1s 07.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(37) { animation: fade-in 1s 07.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(38) { animation: fade-in 1s 07.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(39) { animation: fade-in 1s 07.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(40) { animation: fade-in 1s 08.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(41) { animation: fade-in 1s 08.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(42) { animation: fade-in 1s 08.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(43) { animation: fade-in 1s 08.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(44) { animation: fade-in 1s 08.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(45) { animation: fade-in 1s 09.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(46) { animation: fade-in 1s 09.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(47) { animation: fade-in 1s 09.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(48) { animation: fade-in 1s 09.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(49) { animation: fade-in 1s 09.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(50) { animation: fade-in 1s 10.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(51) { animation: fade-in 1s 10.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(52) { animation: fade-in 1s 10.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(53) { animation: fade-in 1s 10.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(54) { animation: fade-in 1s 10.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(55) { animation: fade-in 1s 11.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(56) { animation: fade-in 1s 11.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(57) { animation: fade-in 1s 11.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(58) { animation: fade-in 1s 11.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(59) { animation: fade-in 1s 11.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(60) { animation: fade-in 1s 12.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(61) { animation: fade-in 1s 12.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(62) { animation: fade-in 1s 12.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(63) { animation: fade-in 1s 12.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(64) { animation: fade-in 1s 12.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(65) { animation: fade-in 1s 13.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(66) { animation: fade-in 1s 13.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(67) { animation: fade-in 1s 13.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(68) { animation: fade-in 1s 13.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(69) { animation: fade-in 1s 13.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
-.jwTestimonial1:nth-child(70) { animation: fade-in 1s 14.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+
+/* Neil (24-nov-2022) : below CSS styles were created to fade-in the testimondial-text, word-by-word .. which is not what Jorien requires
+
+.jwTestimonial1a               { font-family:tahoma,sans-serif; font-size:24px; text-align:center; vertical-align:top; font-style:italic; color:#888888; display:inline; opacity:0; filter: blur(4px); }
+.jwTestimonial1a:nth-child(01) { animation: fade-in 1s 00.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(02) { animation: fade-in 1s 00.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(03) { animation: fade-in 1s 00.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(04) { animation: fade-in 1s 00.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(05) { animation: fade-in 1s 01.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(06) { animation: fade-in 1s 01.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(07) { animation: fade-in 1s 01.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(08) { animation: fade-in 1s 01.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(09) { animation: fade-in 1s 01.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(10) { animation: fade-in 1s 02.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(11) { animation: fade-in 1s 02.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(12) { animation: fade-in 1s 02.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(13) { animation: fade-in 1s 02.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(14) { animation: fade-in 1s 02.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(15) { animation: fade-in 1s 03.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(16) { animation: fade-in 1s 03.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(17) { animation: fade-in 1s 03.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(18) { animation: fade-in 1s 03.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(19) { animation: fade-in 1s 03.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(20) { animation: fade-in 1s 04.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(21) { animation: fade-in 1s 04.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(22) { animation: fade-in 1s 04.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(23) { animation: fade-in 1s 04.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(24) { animation: fade-in 1s 04.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(25) { animation: fade-in 1s 05.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(26) { animation: fade-in 1s 05.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(27) { animation: fade-in 1s 05.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(28) { animation: fade-in 1s 05.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(29) { animation: fade-in 1s 05.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(30) { animation: fade-in 1s 06.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(31) { animation: fade-in 1s 06.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(32) { animation: fade-in 1s 06.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(33) { animation: fade-in 1s 06.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(34) { animation: fade-in 1s 06.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(35) { animation: fade-in 1s 07.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(36) { animation: fade-in 1s 07.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(37) { animation: fade-in 1s 07.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(38) { animation: fade-in 1s 07.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(39) { animation: fade-in 1s 07.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(40) { animation: fade-in 1s 08.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(41) { animation: fade-in 1s 08.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(42) { animation: fade-in 1s 08.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(43) { animation: fade-in 1s 08.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(44) { animation: fade-in 1s 08.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(45) { animation: fade-in 1s 09.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(46) { animation: fade-in 1s 09.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(47) { animation: fade-in 1s 09.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(48) { animation: fade-in 1s 09.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(49) { animation: fade-in 1s 09.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(50) { animation: fade-in 1s 10.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(51) { animation: fade-in 1s 10.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(52) { animation: fade-in 1s 10.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(53) { animation: fade-in 1s 10.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(54) { animation: fade-in 1s 10.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(55) { animation: fade-in 1s 11.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(56) { animation: fade-in 1s 11.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(57) { animation: fade-in 1s 11.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(58) { animation: fade-in 1s 11.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(59) { animation: fade-in 1s 11.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(60) { animation: fade-in 1s 12.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(61) { animation: fade-in 1s 12.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(62) { animation: fade-in 1s 12.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(63) { animation: fade-in 1s 12.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(64) { animation: fade-in 1s 12.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(65) { animation: fade-in 1s 13.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(66) { animation: fade-in 1s 13.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(67) { animation: fade-in 1s 13.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(68) { animation: fade-in 1s 13.6s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(69) { animation: fade-in 1s 13.8s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.jwTestimonial1a:nth-child(70) { animation: fade-in 1s 14.0s forwards cubic-bezier(0.11, 0, 0.5, 0); }
 
 @keyframes fade-in {
   100% { opacity: 1; filter: blur(0); }
 }
+
+*/
