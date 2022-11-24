@@ -7,7 +7,7 @@
   <div class="jwHeaderDiv">
     <table class="jwHeaderTable">
       <tr>
-        <td width="50%"><a href="index.html">Logo Commponist</a></td>
+        <td width="50%"><a href="index.html">Logo Commponist</a> &nbsp; &nbsp; <span style="color:#CCCBE9;">v20221124.c</span></td>
         <td class="jwHeaderMenuItem"><a href="pages/stem.html">stem</a></td>
         <td class="jwHeaderMenuItem"><a href="pages/pen.html">pen</a></td>
         <td class="jwHeaderMenuItem"><a href="pages/presentatie.html">presentatie</a></td>
@@ -48,13 +48,13 @@
           <table width="100%">
             <tr>
               <td width="10%">&nbsp;</td>
-              <td width="10%" class="jwArrowsLight" onmouseover="this.className='jwArrowsDark';" onmouseout="this.className='jwArrowsLight';" onclick="jwShowTestimonialPrev();">&lt;</td>
+              <td width="10%" class="jwArrows" onclick="jwShowTestimonialPrev();">&lt;</td>
               <td id="jw_testimonial_content">
                 <span class="jwTestimonial1a">&ldquo;Jorien wist van mijn complexe videopitch een aangename luisterervaring te maken.&rdquo;</span><br/><br/><br/>
                 <span class="jwTestimonial2">Martine de Ridder</span>
                 <span class="jwTestimonial3">ABN Amro</span>
               </td>
-              <td width="10%" class="jwArrowsLight" onmouseover="this.className='jwArrowsDark';" onmouseout="this.className='jwArrowsLight';" onclick="jwShowTestimonialNext();">&gt;</td>
+              <td width="10%" class="jwArrows" onclick="jwShowTestimonialNext();">&gt;</td>
               <td width="10%">&nbsp;</td>
             </tr>
           </table>
@@ -72,7 +72,6 @@
           <div class="jwFooter" style="margin-left:30px;">KvK : 86577468</div>
           <div class="jwFooter" style="margin-left:30px;">BTW-id : NL004274055B92</div>
           <div class="jwFooter" style="margin-left:60px;"><img src="images/jw000__footer__linkedin.png" alt="in" height="20px"></div>
-          <div class="jwFooter" style="margin-left:60px;">v20221123.f</div>
         </td>
       </tr>
     </table>
@@ -81,10 +80,11 @@
   <script type="text/javascript">
 
     var jwTestimonialNr   = 1;
+    var jwTestimonialMax  = 4;
 
-    var jwTestimonialText = new Array(5); // [0..4]
-    var jwTestimonialAuth = new Array(5);
-    var jwTestimonialComp = new Array(5);
+    var jwTestimonialText = new Array(jwTestimonialMax + 1); // [0..4]
+    var jwTestimonialAuth = new Array(jwTestimonialMax + 1);
+    var jwTestimonialComp = new Array(jwTestimonialMax + 1);
 
     jwTestimonialText[1] = "Jorien wist van mijn complexe videopitch een aangename luisterervaring te maken.";
     jwTestimonialText[2] = "Voor een podcast producer is Jorien een feest om mee te werken. Ze heeft niet alleen een prachtige vertelstem, ze doet ook research en schrijft zelf de scripts.";
@@ -113,7 +113,7 @@
     {
       jwTestimonialNr--;
 
-      if( jwTestimonialNr <= 0 ) jwTestimonialNr = 4;
+      if( jwTestimonialNr <= 0 ) jwTestimonialNr = jwTestimonialMax;
 
       showTestimonial(jwTestimonialNr);
     }
@@ -122,7 +122,7 @@
     {
       jwTestimonialNr++;
 
-      if( jwTestimonialNr > 4 ) jwTestimonialNr = 1;
+      if( jwTestimonialNr > jwTestimonialMax ) jwTestimonialNr = 1;
 
       showTestimonial(jwTestimonialNr);
     }
