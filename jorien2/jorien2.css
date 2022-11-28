@@ -1,4 +1,5 @@
-body                        { padding: 0px; margin: 0px; }
+body                        { padding: 0px; margin: 0px; font-size: 20px; }
+
 #jw-header-div              { width: 100%; background-color: #CCCBE9; position: fixed; top: 0; left: 0; z-index: 10; padding: 0px; }
 #jw-header-table            { width: 100%; height: 100%; border: 0px; cellpadding: 0px; cellspacing: 0px; }
 
@@ -9,10 +10,17 @@ body                        { padding: 0px; margin: 0px; }
 #jw-image-banner-line-1-alt { font-family: "trebuchet ms", sans-serif;               font-size: 30px; font-weight: 500;              margin-left: 05%; display: none;  color: #000000; }
 #jw-image-banner-line-2-alt { font-family: "trebuchet ms", sans-serif;               font-size: 20px; font-weight: 300;              margin-left: 05%; display: none;  color: #000000; }
 
-.jw-content-div             { margin: 5%; font-family:sans-serif; font-size: 18px; text-align: left; vertical-align: top; max-width : 50ch; display: inline-block; }
+.jw-content-div             { margin: 5%; font-family:sans-serif; font-size: 20px; text-align: left; vertical-align: top; max-width : 50ch; display: inline-block; }
+.jw-arrows                  { font-size: 40px; font-weight: 200; color: #CCCCCC; font-family: sans-serif; text-align: center; vertical-align: top; }
+.jw-arrows:hover            { font-size: 42px; font-weight: 400; color: #444444; cursor: pointer; }
+.jw-testimonial-1           { font-family: tahoma, sans-serif; font-size: 24px; text-align: center; vertical-align: top; font-style: italic; color: #888888; display: block; }
+.jw-testimonial-2           { font-family: tahoma, sans-serif; font-size: 20px; text-align: center; vertical-align: top; font-style: bolder; color: #111111; display: block; }
+.jw-testimonial-3           { font-family: tahoma, sans-serif; font-size: 16px; text-align: center; vertical-align: top; font-style: italic; color: #666666; display: block; }
+
+#jw-footer                  { font-family: tahoma, sans-serif; font-size: 14px; width: 100%; color: #888888; background-color: #CCCBE9; vertical-align: middle; display: inline-block; padding: 10px; }
 
 #jw-main-menu ul            { list-style-type: none; text-align: center; vertical-align: middle; margin: 0; padding: 0; }
-#jw-main-menu li            { display: inline-block; font-size: 18px; padding: 20px; font-family: sans-serif; width:15%; }
+#jw-main-menu li            { display: inline-block; font-size: 18px; padding: 10px; font-family: sans-serif; width:15%; }
 #jw-main-menu a             { text-decoration: none; color: #000000; }
 #jw-main-menu a:hover       { text-decoration: underline; text-decoration-color: #999999; font-weight: bolder; }
 
@@ -23,9 +31,9 @@ body                        { padding: 0px; margin: 0px; }
 #jw-hamburger-menu li       { list-style-type: none; line-height: 3rem; }
 #jw-hamburger-menu a        { text-decoration: none; color: #B9FAF8; font-size: 1.3rem; }
 #jw-hamburger-menu a:hover  { text-decoration: underline; }
-#jw-hamburger-menu          { display: none; z-index: 11; position: fixed; top: 5px; right: 5px; width: 50px; height: 50px; border: none; padding: 0px; margin: 5px; font-family: sans-serif; background: linear-gradient( to bottom, #3D0E61, #3D0E61 20%, #CCCBE9 20%, #CCCBE9 40%, #3D0E61 40%, #3D0E61 60%, #CCCBE9 60%, #CCCBE9 80%, #3D0E61 80%, #3D0E61 100% ); }
+#jw-hamburger-menu          { display: none; z-index: 12; position: fixed; top: 5px; right: 5px; width: 50px; height: 50px; border: none; padding: 0px; margin: 5px; font-family: sans-serif; background: linear-gradient( to bottom, #3D0E61, #3D0E61 20%, #CCCBE9 20%, #CCCBE9 40%, #3D0E61 40%, #3D0E61 60%, #CCCBE9 60%, #CCCBE9 80%, #3D0E61 80%, #3D0E61 100% ); }
 
-#jw-overlay                 { position: fixed; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; visibility: hidden; transition: opacity .15s, visibility .15s, height .15s; overflow: hidden; background: black; z-index: -1; }
+#jw-overlay                 { position: fixed; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; visibility: hidden; transition: opacity .15s, visibility .15s, height .15s; overflow: hidden; background: black; z-index: 11; }
 
 #jw-hamburger-input:checked + #jw-hamburger-menu #jw-hamburger-side-menu {
   visibility: visible;
@@ -38,7 +46,7 @@ body                        { padding: 0px; margin: 0px; }
   opacity: 0.2;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 900px) {
   #jw-main-menu           { display: none;   }
   #jw-hamburger-menu      { display: inline; }
 }
