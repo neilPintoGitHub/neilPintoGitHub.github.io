@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jorien Wallast - Commponist</title>
+  <link rel="stylesheet" href="jorien2.css" />
+</head>
+<body>
+  <div id="jw-header-div">
+    <table id="jw-header-table">
+      <tr>
+        <td width="25%"><a href="index.html"><img src="images/jw001__header__logo.png" alt="Commponist" style="height: 2.5rem; margin:0.25rem; display: inline; "/></a></td>
+        <td width="75%">
+          <nav id="jw-main-menu">
+            <ul>
+              <li><a href="pages/stem.html">stem</a>
+              <li><a href="pages/pen.html">pen</a>
+              <li><a href="pages/presentatie.html">presentatie</a>
+              <li><a href="pages/tarieven.html">tarieven</a>
+              <li><a href="pages/over_mij.html">over mij</a>
+            </ul>
+          </nav>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <input id="jw-hamburger-input" type="checkbox" />
+  <label id="jw-hamburger-menu"  for="jw-hamburger-input">
+    <nav id="jw-hamburger-side-menu">
+      <span style="position:fixed; top:0.25rem; right:0.5rem; z-index: 11; color: #FFFFFF; cursor: pointer;">x</span>
+      <ul>
+        <li><a href="pages/stem.html">stem</a>
+        <li><a href="pages/pen.html">pen</a>
+        <li><a href="pages/presentatie.html">presentatie</a>
+        <li><a href="pages/tarieven.html">tarieven</a>
+        <li><a href="pages/over_mij.html">over mij</a>
+      </ul>
+    </nav>
+  </label>
+
+  <div id="jw-overlay"></div>
+
+  <div id="jw-image-banner-div">
+    <img src="images/jw002__index__intro.jpg" width="100%" height="30%" />
+    <span id="jw-image-banner-line-1">Jorien Wallast</span>
+    <span id="jw-image-banner-line-2">Communicatie componist</span>
+  </div>
+
+  <br/>
+
+  <span id="jw-image-banner-line-1-alt"><b>Jorien Wallast</b></span>
+  <span id="jw-image-banner-line-2-alt"><i>Communicatie componist</i></span>
+
+  <div class="jw-content-div">
+    Een boodschap de wereld in slingeren is eenvoudig. Maar geh&oacute;&oacute;rd worden is veel moeilijker.
+    <br/><br/>Een overtuigende boodschap samenstellen is als het componeren van muziek. Als communicatie componist maak ik van jouw verhaal een klinkende boodschap.
+    <br/><br/>Ik ben beschikbaar als voice-over, tekstschrijver en presentator van jouw media- of communicatiecampagne. Ik werk snel en secuur, vanuit mijn eigen studio of op locatie.
+    <br/><br/>Mijn stem, jouw geluid. Nieuwsgierig geworden? Neem contact met me op voor de mogelijkheden :
+    <br/><br/>jorien@commponist.nl / 06 21296919.
+  </div>
+  <div class="jw-content-div-center">
+    <img src="images/jw003__index__logo__pen.jpg" width="70%" />
+  </div>
+
+  <br/><br/><br/>
+
+  <div class="jw-content-div">
+    Ik heb gewerkt met:
+    <br/><br/>
+    [reel met opdrachtgevers logos]
+  </div>
+
+  <br/><br/><br/>
+
+  <div>
+    <table width="100%">
+      <tr height="250px">
+        <td width="10%">&nbsp;</td>
+        <td width="10%" class="jw-arrows" onclick="jwShowTestimonialPrev();">&lt;</td>
+        <td id="jw_testimonial_content" style="vertical-align: top;">
+          <span class="jw-testimonial-1">&ldquo;Jorien wist van mijn complexe videopitch een aangename luisterervaring te maken.&rdquo;</span><br/><br/><br/>
+          <span class="jw-testimonial-2">Martine de Ridder</span>
+          <span class="jw-testimonial-3">ABN Amro</span>
+        </td>
+        <td width="10%" class="jw-arrows" onclick="jwShowTestimonialNext();">&gt;</td>
+        <td width="10%">&nbsp;</td>
+      </tr>
+    </table>
+  </div>
+
+  <br/><br/><br/>
+
+  <div class="jw-footer">&#169; 2022 Jorien Wallast Communicatie. Alle rechten voorbehouden.</div>
+  <div class="jw-footer">KvK : 86577468</div>
+  <div class="jw-footer">BTW-id : NL004274055B92</div>
+  <div class="jw-footer"><a href="https://www.linkedin.com/in/joriendelege/" target="_blank" rel="noopener noreferrer"><img src="images/jw000__footer__linkedin.png" alt="LinkedIn" height="20px"></a> &nbsp; &nbsp; <span id="footer-ver" style="color:#CCCBE9;">v</span></div>
+
+  <script type="text/javascript">
+
+    function updFooterVer()
+    {
+      document.getElementById("footer-ver").innerText = "v20221129.d:" + window.innerWidth + "x" + window.innerHeight;
+    }
+
+    updFooterVer();
+    window.addEventListener('resize', updFooterVer);
+
+    var jwTestimonialNr   = 1;
+    var jwTestimonialMax  = 4;
+
+    var jwTestimonialText = new Array(jwTestimonialMax + 1); // [0..4]
+    var jwTestimonialAuth = new Array(jwTestimonialMax + 1);
+    var jwTestimonialComp = new Array(jwTestimonialMax + 1);
+
+    jwTestimonialText[1] = "Jorien wist van mijn complexe videopitch een aangename luisterervaring te maken.";
+    jwTestimonialText[2] = "Voor een podcast producer is Jorien een feest om mee te werken. Ze heeft niet alleen een prachtige vertelstem, ze doet ook research en schrijft zelf de scripts.";
+    jwTestimonialText[3] = "Als voorzitter weet Jorien ons met zachte hand door de agenda te loodsen. Met scherpe vragen en aandacht voor ieders inbreng brengt ze ons echt met elkaar in gesprek.";
+    jwTestimonialText[4] = "Jorien begreep al heel snel wat we wilden bereiken met onze radiospot. Ze schreef mee aan de copy en wist precies de juiste toon te vinden bij het inspreken.";
+
+    jwTestimonialAuth[1] = "Martine de Ridder";
+    jwTestimonialAuth[2] = "Michiel van Poelgeest";
+    jwTestimonialAuth[3] = "Thessa Meijlis";
+    jwTestimonialAuth[4] = "Jan Postma";
+
+    jwTestimonialComp[1] = "Way Beyond Compare";
+    jwTestimonialComp[2] = "Klaenk";
+    jwTestimonialComp[3] = "WISE Nederland";
+    jwTestimonialComp[4] = "Land van Ons";
+
+    function showTestimonial(nr)
+    { // var newTestimonialText = jwTestimonialText[nr].replaceAll(' ', ' </span><span class="jwTestimonial1">');
+
+      document.getElementById("jw_testimonial_content").innerHTML =   '<span class="jw-testimonial-1"> &ldquo;' + jwTestimonialText[nr] + '&rdquo; </span><br/><br/><br/>'
+                                                                    + '<span class="jw-testimonial-2">'         + jwTestimonialAuth[nr] + '</span>'
+                                                                    + '<span class="jw-testimonial-3">'         + jwTestimonialComp[nr] + '</span>'
+    }
+
+    function jwShowTestimonialPrev()
+    {
+      jwTestimonialNr--;
+
+      if( jwTestimonialNr <= 0 ) jwTestimonialNr = jwTestimonialMax;
+
+      showTestimonial(jwTestimonialNr);
+    }
+
+    function jwShowTestimonialNext()
+    {
+      jwTestimonialNr++;
+
+      if( jwTestimonialNr > jwTestimonialMax ) jwTestimonialNr = 1;
+
+      showTestimonial(jwTestimonialNr);
+    }
+
+    showTestimonial(1);
+  </script>
+</body>
+</html>
