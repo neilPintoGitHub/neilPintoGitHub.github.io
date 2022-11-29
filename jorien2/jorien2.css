@@ -1,4 +1,4 @@
-html                        { font-size: 20px; }
+html                        { font-size: 20px; line-height: 1.5rem; }
 body                        { padding: 0px; margin: 0px; }
 
 #jw-header-div              { width: 100%; background-color: #CCCBE9; position: fixed; top: 0; left: 0; z-index: 10; padding: 0px; }
@@ -12,7 +12,7 @@ body                        { padding: 0px; margin: 0px; }
 #jw-image-banner-line-2-alt { font-family: "trebuchet ms", sans-serif;                 font-size: 1.0rem; font-weight: 300;              margin-left: 05%; display: none;  color: #000000; }
 
 .jw-content-div             { margin: 4vw; width: 40vw; font-family:sans-serif; text-align: left;   vertical-align: top; max-width : 50ch; display: inline-block; }
-.jw-content-center-div      { margin: 4vw; width: 40vw; font-family:sans-serif; text-align: center; vertical-align: top; max-width : 50ch; display: inline-block; }
+.jw-content-div-center      { margin: 4vw; width: 40vw; font-family:sans-serif; text-align: center; vertical-align: top; max-width : 50ch; display: inline-block; }
 
 .jw-arrows                  { font-size: 2.0rem; font-weight: 200; color: #CCCCCC; font-family: sans-serif; text-align: center; vertical-align: top; }
 .jw-arrows:hover            { font-size: 2.1rem; font-weight: 400; color: #444444; cursor: pointer; }
@@ -28,10 +28,10 @@ body                        { padding: 0px; margin: 0px; }
 #jw-main-menu a:hover       { text-decoration: underline; text-decoration-color: #999999; font-weight: bolder; }
 
 #jw-hamburger-input         { display: none; }
-#jw-hamburger-side-menu     { visibility: hidden; position: fixed; top: 0px; right: 0px; width: 10rem; background-color: #3D0E61; transition: 0.15s; padding: 0.75rem; box-sizing: border-box; }
+#jw-hamburger-side-menu     { visibility: hidden; position: fixed; top: 0px; right: 0px; width: 10rem; background-color: #3D0E61; transition: 0.15s; padding: 0.5rem; box-sizing: border-box; }
 #jw-hamburger-menu ul       { padding-left: 0px; }
-#jw-hamburger-menu li       { list-style-type: none; line-height: 3rem; }
-#jw-hamburger-menu a        { text-decoration: none; color: #B9FAF8; font-size: 1.3rem; }
+#jw-hamburger-menu li       { list-style-type: none; line-height: 2rem; }
+#jw-hamburger-menu a        { text-decoration: none; color: #B9FAF8; font-size: 1rem; }
 #jw-hamburger-menu a:hover  { text-decoration: underline; }
 #jw-hamburger-menu          { display: none; z-index: 12; position: fixed; top: 0.25rem; right: 0.25rem; width: 2.5rem; height: 2.5rem; border: none; padding: 0px; margin: 0.25rem; font-family: sans-serif; background: linear-gradient( to bottom, #3D0E61, #3D0E61 20%, #CCCBE9 20%, #CCCBE9 40%, #3D0E61 40%, #3D0E61 60%, #CCCBE9 60%, #CCCBE9 80%, #3D0E61 80%, #3D0E61 100% ); }
 
@@ -42,7 +42,7 @@ body                        { padding: 0px; margin: 0px; }
   right: 0px;
 }
 
-#jw-hamburger-input:checked ~ #jw-overlay{
+#jw-hamburger-input:checked ~ #jw-overlay {
   visibility: visible;
   opacity: 0.2;
 }
@@ -51,14 +51,10 @@ body                        { padding: 0px; margin: 0px; }
   html                        { font-size: 3vw    }
 
   .jw-content-div             { width: 90vw;      }
-  .jw-content-center-div      { width: 90vw;      }
+  .jw-content-div-center      { width: 90vw;      }
 
   #jw-main-menu               { display: none;    }
   #jw-hamburger-menu          { display: inline;  }
-}
-
-@media screen and (max-width: 900px) {
-/*  html                        { font-size : 16px; } */
 }
 
 @media screen and (max-width: 600px) {
