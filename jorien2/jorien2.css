@@ -17,6 +17,8 @@ body                        { padding: 0px; margin: 0px; }
 .jw-content-div-center      { margin: 4vw; width: 40vw; font-family:sans-serif; text-align: center; vertical-align: top; max-width :  45ch; display: inline-block; }
 .jw-content-div-dbl-wide    { margin: 4vw; width: 80vw; font-family:sans-serif; text-align: left;   vertical-align: top; max-width : 180ch; display: inline-block; }
 
+.jw-tariff-hdr              { background-color: #0033A0; color: #FFFFFF; }
+
 .jw-arrows                  { font-size: 2.0rem; font-weight: 200; color: #CCCCCC; font-family: sans-serif; text-align: center; vertical-align: top; }
 .jw-arrows:hover            { font-size: 2.1rem; font-weight: 400; color: #444444; cursor: pointer; }
 .jw-testimonial-1           { font-family: tahoma, sans-serif; font-size: 1.2rem; text-align: center; vertical-align: top; font-style: italic; color: #888888; display: block; }
