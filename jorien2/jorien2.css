@@ -1,12 +1,12 @@
-html                        { font-size: 125%; line-height: 1.5rem; }
-body                        { padding: 0px; margin: 0px; }
+html                        { font-size: 125%; line-height: 2rem; }
+body                        { padding: 0px; margin: 0px; line-height: 2rem; }
 
 #jw-header-div              { width: 100%; background-color: #CCCBE9; position: fixed; top: 0; left: 0; z-index: 10; padding: 0px; }
 #jw-header-table            { width: 100%; height: 100%; border: 0px; cellpadding: 0px; cellspacing: 0px; }
 
 #jw-image-banner-div        { width: 100%; position: relative; margin-top: 3.4rem; }
-#jw-image-banner-line-1     { font-family: "trebuchet ms", sans-serif; bottom: 3.5rem; font-size: 3.0rem; font-weight: 700; position: absolute; left: 05%; display: block; color: #FFFFFF; }
-#jw-image-banner-line-2     { font-family: tahoma         ,sans-serif; bottom: 1.5rem; font-size: 2.0rem; font-weight: 500; position: absolute; left: 05%; display: block; color: #FFFFFF; }
+#jw-image-banner-line-1     { font-family: "trebuchet ms", sans-serif; bottom: 3.5rem; font-size: 3.0rem; font-weight: 700; position: absolute; left: 4vw; display: block; color: #FFFFFF; }
+#jw-image-banner-line-2     { font-family: tahoma         ,sans-serif; bottom: 1.5rem; font-size: 2.0rem; font-weight: 500; position: absolute; left: 4vw; display: block; color: #FFFFFF; }
 
 #jw-image-banner-line-1-alt { font-family: "trebuchet ms", sans-serif;                 font-size: 1.6rem; font-weight: 500;              margin-left: 4vw; display: none;  color: #000000; }
 #jw-image-banner-line-2-alt { font-family: "trebuchet ms", sans-serif;                 font-size: 1.2rem; font-weight: 300;              margin-left: 4vw; display: none;  color: #000000; }
