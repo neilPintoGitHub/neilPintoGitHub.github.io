@@ -90,14 +90,20 @@
 
   <br/><br/><br/>
 
-  <div id="jw-footer">
-    &#169; 2022 Jorien Wallast Communicatie. Alle rechten voorbehouden.
-    <br/>KvK : 86577468
-    <br/>BTW-id : NL004274055B92
-    <br/><a href="https://www.linkedin.com/in/joriendelege/" target="_blank" rel="noopener noreferrer"><img src="images/jw000__footer__linkedin.png" alt="LinkedIn" height="20px"></a> &nbsp; &nbsp; <span style="color:#CCCBE9;">v20221128.a</span>
-  </div>
+  <div class="jw-footer">&#169; 2022 Jorien Wallast Communicatie. Alle rechten voorbehouden.</div>
+  <div class="jw-footer">KvK : 86577468</div>
+  <div class="jw-footer">BTW-id : NL004274055B92</div>
+  <div class="jw-footer"><a href="https://www.linkedin.com/in/joriendelege/" target="_blank" rel="noopener noreferrer"><img src="images/jw000__footer__linkedin.png" alt="LinkedIn" height="20px"></a> &nbsp; &nbsp; <span id="footer-ver" style="color:#CCCBE9;">v</span></div>
 
   <script type="text/javascript">
+
+    function updFooterVer()
+    {
+      document.getElementById("footer-ver").innerText =    "v20221129.c : " + window.innerWidth + "x" + window.innerHeight;
+    }
+
+    updFooterVer();
+    window.addEventListener('resize', updFooterVer);
 
     var jwTestimonialNr   = 1;
     var jwTestimonialMax  = 4;
