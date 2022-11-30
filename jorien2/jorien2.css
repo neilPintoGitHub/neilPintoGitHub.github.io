@@ -27,9 +27,9 @@ body                                { padding: 0px; margin: 0px; line-height: 2r
 
 .jw-arrows                          { font-size: 2.0rem; font-weight: 200; color: #CCCCCC; font-family: sans-serif; text-align: center; vertical-align: top; }
 .jw-arrows:hover                    { font-size: 2.1rem; font-weight: 400; color: #444444; cursor: pointer; }
-.jw-testimonial-1                   { font-family: tahoma, sans-serif; font-size: 1.2rem; text-align: center; vertical-align: top; font-style: italic; color: #888888; display: block; }
-.jw-testimonial-2                   { font-family: tahoma, sans-serif; font-size: 1.0rem; text-align: center; vertical-align: top; font-style: bolder; color: #111111; display: block; }
-.jw-testimonial-3                   { font-family: tahoma, sans-serif; font-size: 0.8rem; text-align: center; vertical-align: top; font-style: italic; color: #666666; display: block; }
+.jw-testimonial-1                   { font-family: tahoma, sans-serif; font-size: 1.3rem; text-align: center; vertical-align: top; font-style: italic; color: #888888; display: block; }
+.jw-testimonial-2                   { font-family: tahoma, sans-serif; font-size: 1.1rem; text-align: center; vertical-align: top; font-style: bolder; color: #111111; display: block; }
+.jw-testimonial-3                   { font-family: tahoma, sans-serif; font-size: 0.8rem; text-align: center; vertical-align: top; font-style: italic; color: #666666; display: block; line-height: 1rem; }
 
 #jw-footer                          { font-family: tahoma, sans-serif; font-size: 0.7rem; width: 100%; color: #888888; background-color: #CCCBE9; vertical-align: middle; display: block; line-height: 2rem; }
 

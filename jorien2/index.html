@@ -78,11 +78,11 @@
 
   <div>
     <table width="100%">
-      <tr height="250px">
+      <tr>
         <td width="05%">&nbsp;</td>
         <td width="10%" class="jw-arrows" onclick="jwShowTestimonialPrev();">&lt;</td>
         <td width="70%" id="jw_testimonial_content" style="vertical-align: top;">
-          <span class="jw-testimonial-1">&ldquo;Jorien wist van mijn complexe videopitch een aangename luisterervaring te maken.&rdquo;</span><br/><br/><br/>
+          <span class="jw-testimonial-1">&ldquo;Jorien wist van mijn complexe videopitch een aangename luisterervaring te maken.&rdquo;</span><br/>
           <span class="jw-testimonial-2">Martine de Ridder</span>
           <span class="jw-testimonial-3">ABN Amro</span>
         </td>
@@ -126,13 +126,15 @@
     jwTestimonialComp[3] = "WISE Nederland";
     jwTestimonialComp[4] = "Land van Ons";
 
+
     function showTestimonial(nr)
     { // var newTestimonialText = jwTestimonialText[nr].replaceAll(' ', ' </span><span class="jwTestimonial1">');
 
-      document.getElementById("jw_testimonial_content").innerHTML =   '<span class="jw-testimonial-1"> &ldquo;' + jwTestimonialText[nr] + '&rdquo; </span><br/><br/><br/>'
+      document.getElementById("jw_testimonial_content").innerHTML =   '<span class="jw-testimonial-1"> &ldquo;' + jwTestimonialText[nr] + '&rdquo; </span><br/>'
                                                                     + '<span class="jw-testimonial-2">'         + jwTestimonialAuth[nr] + '</span>'
                                                                     + '<span class="jw-testimonial-3">'         + jwTestimonialComp[nr] + '</span>'
     }
+
 
     function jwShowTestimonialPrev()
     {
@@ -142,6 +144,7 @@
 
       showTestimonial(jwTestimonialNr);
     }
+
 
     function jwShowTestimonialNext()
     {
