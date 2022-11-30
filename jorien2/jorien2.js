@@ -2,7 +2,7 @@
 
 function updFooterVer()
 {
-  document.getElementById("footer-ver").innerText = "v20221129.1845." + window.innerWidth + "x" + window.innerHeight;
+  document.getElementById("footer-ver").innerText = "v20221130.2015." + window.innerWidth + "x" + window.innerHeight;
 }
 
 updFooterVer();
