@@ -1,5 +1,5 @@
 html                                { font-size: 125%; line-height: 2rem; }
-body                                { padding: 0px; margin: 0px; line-height: 2rem; }
+body                                { padding: 0px; margin: 0px; line-height: 2rem; color: #535353; }
 
 #jw-header-div                      { width: 100%; background-color: #F2F2F2; position: fixed; top: 0; left: 0; z-index: 10; padding: 0px; }
 #jw-header-table                    { width: 100%; height: 100%; border: 0px; cellpadding: 0px; cellspacing: 0px; line-height: 1rem; }
@@ -23,16 +23,17 @@ body                                { padding: 0px; margin: 0px; line-height: 2r
 .jw-content-logo-img-dbl-wide       { opacity: 0.5; display: inline-block; margin: 2%; width: 15rem; height: 5rem; }
 .jw-content-logo-img-dbl-wide:hover { opacity: 1.0; transition: opacity 0.75s; }
 
-.jw-tariff-hdr                      { background-color: #0033A0; color: #FFFFFF; }
+.jw-tariff-hdr                      { background-color: #F1F8E0; color: #0; }
 #jw-tariff-table td                 { border: 1px solid #ddd; border-collapse: collapse; }
 
 .jw-arrows                          { font-size: 2.0rem; font-weight: 200; color: #CCCCCC; font-family: sans-serif; text-align: center; vertical-align: top; -webkit-tap-highlight-color: transparent; }
 .jw-arrows:hover                    { font-size: 2.1rem; font-weight: 400; color: #444444; cursor: pointer; }
+.jw-testimonial-table               { background-color: #FFFFFF; }
 .jw-testimonial-1                   { font-family: tahoma, sans-serif; font-size: 1.3rem; text-align: center; vertical-align: top; font-style: italic; color: #888888; display: block; line-height: 1.8rem; margin-bottom: 0.6rem; }
 .jw-testimonial-2                   { font-family: tahoma, sans-serif; font-size: 1.1rem; text-align: center; vertical-align: top; font-style: bolder; color: #111111; display: block; line-height: 1.2rem; }
 .jw-testimonial-3                   { font-family: tahoma, sans-serif; font-size: 0.8rem; text-align: center; vertical-align: top; font-style: italic; color: #666666; display: block; line-height: 1.0rem; }
 
-#jw-footer                          { font-family: tahoma, sans-serif; font-size: 0.7rem; width: 100%; color: #666666; background-color: #A9D0F5; text-align: center; vertical-align: middle; display: block; line-height: 1rem; padding-top: 1rem; padding-bottom: 1rem; }
+#jw-footer                          { font-family: tahoma, sans-serif; font-size: 0.7rem; width: 100%; color: #eef7ef; background-color: #5c875f; text-align: center; vertical-align: middle; display: block; line-height: 1rem; padding-top: 1rem; padding-bottom: 1rem; }
 #jw-footer-tooltiptext              { visibility: hidden; width: 120px; color: #FFF; text-align: left; border-radius: 5px; padding: 5px 0; position: absolute; left: 50px; z-index: 1; }
 
 #jw-footer:hover #jw-footer-tooltiptext { visibility: visible; }
@@ -41,7 +42,7 @@ body                                { padding: 0px; margin: 0px; line-height: 2r
 #jw-main-menu li                    { display: inline-block; padding: 0.5rem; font-family: sans-serif; width:15%; text-transform: uppercase; }
 #jw-main-menu a                     { text-decoration: none; color: #000000; }
 #jw-main-menu a:hover               { text-decoration: underline; text-decoration-color: #999999; font-weight: bolder; }
-#jw-main-menu-focused               { text-decoration: none; color: #3D0E61; font-weight: bolder; font-size: 1.1rem; }
+#jw-main-menu #jw-main-menu-focused { text-decoration: none; color: #920305; font-weight: bolder; font-size: 1.0rem; }
 
 #jw-hamburger-input                 { display: none; }
 #jw-hamburger-side-menu             { visibility: hidden; position: fixed; top: 0px; right: 0px; font-size: 1.2rem; width: 10rem; background-color: #3D0E61; transition: 0.15s; padding: 0.5rem; box-sizing: border-box; }

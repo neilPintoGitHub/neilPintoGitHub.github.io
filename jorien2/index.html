@@ -3,6 +3,9 @@
 <head>
   <title>Jorien Wallast - Commponist</title>
   <link rel="stylesheet" href="jorien2.css" />
+  <style type="text/css">
+    body { background-color: #eef7ef; }
+  </style>
 </head>
 <body>
   <div id="jw-header-div">
@@ -75,14 +78,14 @@
   <br/><br/><br/>
 
   <div>
-    <table width="100%">
+    <table width="100%" class="jw-testimonial-table">
       <tr>
         <td width="05%">&nbsp;</td>
         <td width="10%" class="jw-arrows" onclick="jwShowTestimonialPrev();">&lt;</td>
         <td width="70%" id="jw_testimonial_content" style="vertical-align: top;">
-          <span class="jw-testimonial-1">&ldquo;Jorien wist van mijn complexe videopitch een aangename luisterervaring te maken.&rdquo;</span>
-          <span class="jw-testimonial-2">Martine de Ridder</span>
-          <span class="jw-testimonial-3">ABN Amro</span>
+          <span class="jw-testimonial-1">&ldquo;Jorien begreep al heel snel wat we wilden bereiken met onze radiospot. Ze schreef mee aan de copy en wist precies de juiste toon te vinden bij het inspreken.&rdquo;</span>
+          <span class="jw-testimonial-2">Oeds-Jan Postma</span>
+          <span class="jw-testimonial-3">Land van Ons</span>
         </td>
         <td width="10%" class="jw-arrows" onclick="jwShowTestimonialNext();">&gt;</td>
         <td width="05%">&nbsp;</td>
@@ -93,10 +96,10 @@
   <br/><br/><br/>
 
   <div id="jw-footer">
-    &#169; 2022 Jorien Wallast Communicatie. Alle rechten voorbehouden.
-    &nbsp; &nbsp; jorien@commponist.nl
+    &#169; 2022 Jorien Wallast Communicatie.
     &nbsp; &nbsp; 06 21296919
-    &nbsp; &nbsp; <a href="https://www.linkedin.com/in/joriendelege/" target="_blank" rel="noopener noreferrer"><img src="images/jw000__footer__linkedin.png" alt="LinkedIn" height="20px"></a>
+    &nbsp; &nbsp; jorien@commponist.nl
+    &nbsp; &nbsp; <a href="https://www.linkedin.com/in/joriendelege/" target="_blank" rel="noopener noreferrer"><img src="images/jw000__footer__linkedin.png" alt="LinkedIn" height="20px" width="20px" style="vertical-align:bottom;"></a>
     <span id="jw-footer-tooltiptext">v</span>
   </div>
 
@@ -110,20 +113,20 @@
     var jwTestimonialAuth = new Array(jwTestimonialMax + 1);
     var jwTestimonialComp = new Array(jwTestimonialMax + 1);
 
-    jwTestimonialText[1] = "Jorien wist van mijn complexe videopitch een aangename luisterervaring te maken.";
-    jwTestimonialText[2] = "Voor een podcast producer is Jorien een feest om mee te werken. Ze heeft niet alleen een prachtige vertelstem, ze doet ook research en schrijft zelf de scripts.";
-    jwTestimonialText[3] = "Als voorzitter weet Jorien ons met zachte hand door de agenda te loodsen. Met scherpe vragen en aandacht voor ieders inbreng brengt ze ons echt met elkaar in gesprek.";
-    jwTestimonialText[4] = "Jorien begreep al heel snel wat we wilden bereiken met onze radiospot. Ze schreef mee aan de copy en wist precies de juiste toon te vinden bij het inspreken.";
+    jwTestimonialText[1] = "Jorien begreep al heel snel wat we wilden bereiken met onze radiospot. Ze schreef mee aan de copy en wist precies de juiste toon te vinden bij het inspreken.";
+    jwTestimonialText[2] = "Als voorzitter weet Jorien ons met zachte hand door de agenda te loodsen. Met scherpe vragen en aandacht voor ieders inbreng brengt ze ons echt met elkaar in gesprek.";
+    jwTestimonialText[3] = "Voor een podcast producer is Jorien een feest om mee te werken. Ze heeft niet alleen een prachtige vertelstem, ze doet ook research en schrijft zelf de scripts.";
+    jwTestimonialText[4] = "Jorien wist van mijn complexe videopitch een aangename luisterervaring te maken.";
 
-    jwTestimonialAuth[1] = "Martine de Ridder";
-    jwTestimonialAuth[2] = "Michiel van Poelgeest";
-    jwTestimonialAuth[3] = "Thessa Meijlis";
-    jwTestimonialAuth[4] = "Jan Postma";
+    jwTestimonialAuth[1] = "Oeds-Jan Postma";
+    jwTestimonialAuth[2] = "Thessa Meijlis";
+    jwTestimonialAuth[3] = "Michiel van Poelgeest";
+    jwTestimonialAuth[4] = "Martine de Ridder";
 
-    jwTestimonialComp[1] = "Way Beyond Compare";
-    jwTestimonialComp[2] = "Klaenk";
-    jwTestimonialComp[3] = "WISE Nederland";
-    jwTestimonialComp[4] = "Land van Ons";
+    jwTestimonialComp[1] = "Land van Ons";
+    jwTestimonialComp[2] = "WISE Nederland";
+    jwTestimonialComp[3] = "Klaenk";
+    jwTestimonialComp[4] = "Way Beyond Compare";
 
 
     function showTestimonial(nr)
