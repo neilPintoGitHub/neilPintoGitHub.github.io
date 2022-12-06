@@ -21,8 +21,8 @@ body                                { padding: 0px; margin: 0px; color: #535353;
 .jw-content-logo-img                { opacity: 1.0; display: inline-block; margin: 2%; width: 7.5rem; height: 5rem; }
 .jw-content-logo-img-dbl-wide       { opacity: 1.0; display: inline-block; margin: 2%; width: 15rem ; height: 5rem; }
 
-#jw-tariff-table                    { width: 100%; border: 1px; border-collapse: collapse; }
-#jw-tariff-table td                 { text-align: left; background-color: #FFFFFF; border: 1px solid #ddd; border-collapse: collapse; }
+#jw-tariff-table                    { border: 1px; border-collapse: collapse; margin: 0 auto; }
+#jw-tariff-table td                 { text-align: left; background-color: #FFFFFF; border: 1px solid #ddd; border-collapse: collapse; max-width: 50ch; overflow-wrap: break-word; }
 #jw-tariff-table .jw-tariff-hdr     { background-color: #F1F8E0; color: #000000; }
 
 .jw-arrows                          { font-size: 2.0rem; font-weight: 200; color: #CCCCCC; font-family: sans-serif; text-align: center; vertical-align: top; -webkit-tap-highlight-color: transparent; }
@@ -86,5 +86,5 @@ body                                { padding: 0px; margin: 0px; color: #535353;
 
 @media screen and (min-width: 1201px) {
   html                        { font-size: 115%; line-height: 1.75rem; }
-  .jw-content-div-tariff      { margin-left: 8%; margin-right: 8%; width: 84%; }
+ /* .jw-content-div-tariff      { margin-left: 8%; margin-right: 8%; width: 84%; } */
 }
