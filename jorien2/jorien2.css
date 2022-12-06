@@ -1,7 +1,7 @@
 html                                { font-size: 125%; line-height: 2rem; }
-body                                { padding: 0px; margin: 0px; line-height: 2rem; color: #535353; }
+body                                { padding: 0px; margin: 0px; line-height: 2rem; color: #535353; background-color: #F2F2F2; }
 
-#jw-header-div                      { width: 100%; background-color: #F2F2F2; position: fixed; top: 0; left: 0; z-index: 10; padding: 0px; box-shadow: 0 10px 10px -6px #535353; }
+#jw-header-div                      { width: 100%; background-color: #FFFFFF; position: fixed; top: 0; left: 0; z-index: 10; padding: 0px; box-shadow: 0 10px 10px -6px #535353; }
 #jw-header-table                    { width: 100%; height: 100%; border: 0px; cellpadding: 0px; cellspacing: 0px; line-height: 1rem; }
 
 #jw-image-banner-div                { width: 100%; position: relative; margin-top: 3.3rem; -webkit-filter: grayscale(100%); filter: grayscale(100%); }
@@ -18,7 +18,7 @@ body                                { padding: 0px; margin: 0px; line-height: 2r
 .jw-content-div-with-credit         { margin: 4%; width: 41%; font-family:sans-serif; text-align: center; vertical-align: top; display: inline-block; position: relative; }
 .jw-content-div-dbl-wide            { margin: 4%; width: 92%; font-family:sans-serif; text-align: left;   vertical-align: top; display: inline-block; }
 .jw-content-div-tariff              { margin: 4%; width: 92%; font-family:sans-serif; text-align: left;   vertical-align: top; display: inline-block; }
-.jw-content-logo-img                { opacity: 0.5; display: inline-block; margin: 2%; width: 7.5rem; height: 5rem; }
+.jw-content-logo-img                { opacity: 0.6; display: inline-block; margin: 2%; width: 7.5rem; height: 5rem; }
 .jw-content-logo-img:hover          { opacity: 1.0; transition: opacity 0.75s; }
 .jw-content-logo-img-dbl-wide       { opacity: 0.5; display: inline-block; margin: 2%; width: 15rem; height: 5rem; }
 .jw-content-logo-img-dbl-wide:hover { opacity: 1.0; transition: opacity 0.75s; }
@@ -28,6 +28,7 @@ body                                { padding: 0px; margin: 0px; line-height: 2r
 
 .jw-arrows                          { font-size: 2.0rem; font-weight: 200; color: #CCCCCC; font-family: sans-serif; text-align: center; vertical-align: top; -webkit-tap-highlight-color: transparent; }
 .jw-arrows:hover                    { font-size: 2.1rem; font-weight: 400; color: #444444; cursor: pointer; }
+.jw-logo-table td                   { text-align: center; vertical-align: middle; }
 .jw-testimonial-table               { background-color: #FFFFFF; }
 .jw-testimonial-1                   { font-family: tahoma, sans-serif; font-size: 1.3rem; text-align: center; vertical-align: top; font-style: italic; color: #888888; display: block; line-height: 1.8rem; margin-bottom: 0.6rem; }
 .jw-testimonial-2                   { font-family: tahoma, sans-serif; font-size: 1.1rem; text-align: center; vertical-align: top; font-style: bolder; color: #111111; display: block; line-height: 1.2rem; }

@@ -3,9 +3,6 @@
 <head>
   <title>Jorien Wallast - Commponist</title>
   <link rel="stylesheet" href="jorien2.css" />
-  <style type="text/css">
-    body { background-color: #eef7ef; }
-  </style>
 </head>
 <body>
   <div id="jw-header-div">
@@ -60,19 +57,18 @@
     <br/><br/>Mijn stem, jouw geluid. Nieuwsgierig geworden? Neem contact met me op voor de mogelijkheden :
     <br/><br/>jorien@commponist.nl / 06 21296919.
   </div>
-  <div class="jw-content-div-center">
-    <img src="images/jw003__index__logo__pen.jpg" width="70%" />
-  </div>
 
-  <div class="jw-content-div-dbl-wide">
-    Ik heb gewerkt met:<br/>
-    <img class="jw-content-logo-img"          src="images/jw004__index__logo__kro_ncrv.png"     alt="kro ncrv"                                  />
-    <img class="jw-content-logo-img"          src="images/jw004__index__logo__kleio.png"        alt="kleio"                                     />
-    <img class="jw-content-logo-img"          src="images/jw004__index__logo__land_van_ons.png" alt="land van ons"                              />
-    <img class="jw-content-logo-img-dbl-wide" src="images/jw004__index__logo__ihc.png"          alt="indisch herinneringscentrum"               />
-    <img class="jw-content-logo-img"          src="images/jw004__index__logo__wise.png"         alt="wise"                                      />
-    <img class="jw-content-logo-img-dbl-wide" src="images/jw004__index__logo__fbjp.png"         alt="fonds bijzondere journalistieke projecten" />
-    <img class="jw-content-logo-img"          src="images/jw004__index__logo__abn_amro.png"     alt="abn amro"                                  />
+  <div class="jw-content-div">
+    Ik heb gewerkt met:<br/><br/>
+    <table width="100%" class="jw-logo-table">
+      <tr>
+        <td width="05%">&nbsp;</td>
+        <td width="10%" class="jw-arrows" onclick="jwShowLogo(-1);">&lt;</td>
+        <td width="70%" id="jw_logo_content"><img class="jw-content-logo-img" src="images/jw004__index__logo__abn_amro.png" alt="abn amro" /></td>
+        <td width="10%" class="jw-arrows" onclick="jwShowLogo(+1);">&gt;</td>
+        <td width="05%">&nbsp;</td>
+      </tr>
+    </table>
   </div>
 
   <br/><br/><br/>
@@ -80,20 +76,24 @@
   <div>
     <table width="100%" class="jw-testimonial-table">
       <tr>
+        <td colspan="5">&nbsp;</td>
+      </tr>
+      <tr>
         <td width="05%">&nbsp;</td>
-        <td width="10%" class="jw-arrows" onclick="jwShowTestimonialPrev();">&lt;</td>
+        <td width="10%" class="jw-arrows" onclick="jwShowTestimonial(-1);">&lt;</td>
         <td width="70%" id="jw_testimonial_content" style="vertical-align: top;">
           <span class="jw-testimonial-1">&ldquo;Jorien begreep al heel snel wat we wilden bereiken met onze radiospot. Ze schreef mee aan de copy en wist precies de juiste toon te vinden bij het inspreken.&rdquo;</span>
           <span class="jw-testimonial-2">Oeds-Jan Postma</span>
           <span class="jw-testimonial-3">Land van Ons</span>
         </td>
-        <td width="10%" class="jw-arrows" onclick="jwShowTestimonialNext();">&gt;</td>
+        <td width="10%" class="jw-arrows" onclick="jwShowTestimonial(+1);">&gt;</td>
         <td width="05%">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="5">&nbsp;</td>
       </tr>
     </table>
   </div>
-
-  <br/><br/><br/>
 
   <div id="jw-footer">
     &#169; 2022 Jorien Wallast Communicatie.
@@ -106,6 +106,21 @@
   <script type="text/javascript" src="jorien2.js"></script>
 
   <script type="text/javascript">
+    var jwLogoNr          = 1;
+    var jwLogoMax         = 7;
+
+    var jwLogoSrc         = new Array(jwLogoMax + 1); // [0..7]
+    var jwLogoAlt         = new Array(jwLogoMax + 1);
+
+    jwLogoSrc[1]          = "abn_amro.png";      jwLogoAlt[1] = "abn amro";
+    jwLogoSrc[2]          = "land_van_ons.png";  jwLogoAlt[2] = "land van ons";
+    jwLogoSrc[3]          = "kro_ncrv.png";      jwLogoAlt[3] = "kro ncrv";
+    jwLogoSrc[4]          = "kleio.png";         jwLogoAlt[4] = "kleio";
+    jwLogoSrc[5]          = "wise.png";          jwLogoAlt[5] = "wise";
+    jwLogoSrc[6]          = "ihc.png";           jwLogoAlt[6] = "indisch herinneringscentrum";
+    jwLogoSrc[7]          = "fbjp.png";          jwLogoAlt[7] = "fonds bijzondere journalistieke projecten";
+
+
     var jwTestimonialNr   = 1;
     var jwTestimonialMax  = 4;
 
@@ -113,51 +128,50 @@
     var jwTestimonialAuth = new Array(jwTestimonialMax + 1);
     var jwTestimonialComp = new Array(jwTestimonialMax + 1);
 
-    jwTestimonialText[1] = "Jorien begreep al heel snel wat we wilden bereiken met onze radiospot. Ze schreef mee aan de copy en wist precies de juiste toon te vinden bij het inspreken.";
-    jwTestimonialText[2] = "Als voorzitter weet Jorien ons met zachte hand door de agenda te loodsen. Met scherpe vragen en aandacht voor ieders inbreng brengt ze ons echt met elkaar in gesprek.";
-    jwTestimonialText[3] = "Voor een podcast producer is Jorien een feest om mee te werken. Ze heeft niet alleen een prachtige vertelstem, ze doet ook research en schrijft zelf de scripts.";
-    jwTestimonialText[4] = "Jorien wist van mijn complexe videopitch een aangename luisterervaring te maken.";
+    jwTestimonialText[1]  = "Jorien begreep al heel snel wat we wilden bereiken met onze radiospot. Ze schreef mee aan de copy en wist precies de juiste toon te vinden bij het inspreken.";
+    jwTestimonialText[2]  = "Als voorzitter weet Jorien ons met zachte hand door de agenda te loodsen. Met scherpe vragen en aandacht voor ieders inbreng brengt ze ons echt met elkaar in gesprek.";
+    jwTestimonialText[3]  = "Voor een podcast producer is Jorien een feest om mee te werken. Ze heeft niet alleen een prachtige vertelstem, ze doet ook research en schrijft zelf de scripts.";
+    jwTestimonialText[4]  = "Jorien wist van mijn complexe videopitch een aangename luisterervaring te maken.";
 
-    jwTestimonialAuth[1] = "Oeds-Jan Postma";
-    jwTestimonialAuth[2] = "Thessa Meijlis";
-    jwTestimonialAuth[3] = "Michiel van Poelgeest";
-    jwTestimonialAuth[4] = "Martine de Ridder";
+    jwTestimonialAuth[1]  = "Oeds-Jan Postma";
+    jwTestimonialAuth[2]  = "Thessa Meijlis";
+    jwTestimonialAuth[3]  = "Michiel van Poelgeest";
+    jwTestimonialAuth[4]  = "Martine de Ridder";
 
-    jwTestimonialComp[1] = "Land van Ons";
-    jwTestimonialComp[2] = "WISE Nederland";
-    jwTestimonialComp[3] = "Klaenk";
-    jwTestimonialComp[4] = "Way Beyond Compare";
-
-
-    function showTestimonial(nr)
-    { // var newTestimonialText = jwTestimonialText[nr].replaceAll(' ', ' </span><span class="jwTestimonial1">');
-
-      document.getElementById("jw_testimonial_content").innerHTML =   '<span class="jw-testimonial-1"> &ldquo;' + jwTestimonialText[nr] + '&rdquo; </span>'
-                                                                    + '<span class="jw-testimonial-2">'         + jwTestimonialAuth[nr] + '</span>'
-                                                                    + '<span class="jw-testimonial-3">'         + jwTestimonialComp[nr] + '</span>'
-    }
+    jwTestimonialComp[1]  = "Land van Ons";
+    jwTestimonialComp[2]  = "WISE Nederland";
+    jwTestimonialComp[3]  = "Klaenk";
+    jwTestimonialComp[4]  = "Way Beyond Compare";
 
 
-    function jwShowTestimonialPrev()
+    function jwShowLogo(nr)
     {
-      jwTestimonialNr--;
+      jwLogoNr = jwLogoNr + nr;
 
-      if( jwTestimonialNr <= 0 ) jwTestimonialNr = jwTestimonialMax;
+      if( jwLogoNr <= 0         ) jwLogoNr = jwLogoMax;
+      if( jwLogoNr >  jwLogoMax ) jwLogoNr = 1;
 
-      showTestimonial(jwTestimonialNr);
+      if( jwLogoSrc[jwLogoNr] === "ihc.png" || jwLogoSrc[jwLogoNr] === "fbjp.png" )
+        document.getElementById("jw_logo_content").innerHTML = "<img class='jw-content-logo-img-dbl-wide' src='images/jw004__index__logo__" + jwLogoSrc[jwLogoNr] + "' alt='" + jwLogoAlt[jwLogoNr] + "' />";
+      else
+        document.getElementById("jw_logo_content").innerHTML = "<img class='jw-content-logo-img'          src='images/jw004__index__logo__" + jwLogoSrc[jwLogoNr] + "' alt='" + jwLogoAlt[jwLogoNr] + "' />";
     }
 
-
-    function jwShowTestimonialNext()
+    function jwShowTestimonial(nr)
     {
-      jwTestimonialNr++;
+      jwTestimonialNr = jwTestimonialNr + nr;
 
-      if( jwTestimonialNr > jwTestimonialMax ) jwTestimonialNr = 1;
+      if( jwTestimonialNr <= 0                ) jwTestimonialNr = jwTestimonialMax;
+      if( jwTestimonialNr >  jwTestimonialMax ) jwTestimonialNr = 1;
 
-      showTestimonial(jwTestimonialNr);
+      document.getElementById("jw_testimonial_content").innerHTML =   '<span class="jw-testimonial-1"> &ldquo;' + jwTestimonialText[jwTestimonialNr] + '&rdquo; </span>'
+                                                                    + '<span class="jw-testimonial-2">'         + jwTestimonialAuth[jwTestimonialNr] + '</span>'
+                                                                    + '<span class="jw-testimonial-3">'         + jwTestimonialComp[jwTestimonialNr] + '</span>'
     }
 
-    showTestimonial(1);
+    jwShowLogo(0);
+    jwShowTestimonial(0);
+
   </script>
 
 </body>
