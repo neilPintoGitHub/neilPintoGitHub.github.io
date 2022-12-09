@@ -4,7 +4,7 @@ body                                { padding: 0px; margin: 0px; color: #535353;
 #jw-header-div                      { width: 100%; background-color: #FFFFFF; position: fixed; top: 0; left: 0; z-index: 10; padding: 0px; box-shadow: 0 10px 10px -6px #535353; }
 #jw-header-table                    { width: 100%; height: 100%; border: 0px; cellpadding: 0px; cellspacing: 0px; line-height: 1rem; }
 
-#jw-image-banner-div                { width: 100%; position: relative; margin-top: 3.3rem; -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+#jw-image-banner-div                { width: 100%; position: relative; margin-top: 3.3rem; -webkit-filter: grayscale(00%); filter: grayscale(00%); }
 #jw-image-banner-line-1             { font-family: "trebuchet ms", sans-serif; bottom: 3.50rem; font-size: 3.0rem; font-weight: 700; position: absolute; left: 4%; display: block; color: #FFFFFF; }
 #jw-image-banner-line-2             { font-family: tahoma         ,sans-serif; bottom: 1.25rem; font-size: 1.5rem; font-weight: 500; position: absolute; left: 4%; display: block; color: #FFFFFF; }
 
@@ -23,7 +23,7 @@ body                                { padding: 0px; margin: 0px; color: #535353;
 
 #jw-tariff-table                    { border: 1px; border-collapse: collapse; margin: 0 auto; }
 #jw-tariff-table td                 { text-align: left; background-color: #FFFFFF; border: 1px solid #ddd; border-collapse: collapse; max-width: 50ch; overflow-wrap: break-word; }
-#jw-tariff-table .jw-tariff-hdr     { background-color: #F1F8E0; color: #000000; }
+#jw-tariff-table .jw-tariff-hdr     { background-color: #5c875f; color: #eef7ef; }
 
 .jw-arrows                          { font-size: 2.0rem; font-weight: 200; color: #CCCCCC; font-family: sans-serif; text-align: center; vertical-align: top; -webkit-tap-highlight-color: transparent; }
 .jw-arrows:hover                    { font-size: 2.1rem; font-weight: 400; color: #444444; cursor: pointer; }
@@ -85,6 +85,5 @@ body                                { padding: 0px; margin: 0px; color: #535353;
 }
 
 @media screen and (min-width: 1201px) {
-  html                        { font-size: 115%; line-height: 1.75rem; }
- /* .jw-content-div-tariff      { margin-left: 8%; margin-right: 8%; width: 84%; } */
+  html                        { font-size: 115%; line-height: 1.5rem; }
 }

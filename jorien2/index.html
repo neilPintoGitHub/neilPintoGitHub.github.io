@@ -12,12 +12,7 @@
   <link rel="preload"    href="images/jw004__index__logo__wise.png"         as="image" />
   <link rel="preload"    href="images/jw004__index__logo__ihc.png"          as="image" />
   <link rel="preload"    href="images/jw004__index__logo__fbjp.png"         as="image" />
-  <link rel="preload"    href="images/jw101__stem__intro.jpg"               as="image" />
-  <link rel="preload"    href="images/jw201__pen__intro.jpg"                as="image" />
-  <link rel="preload"    href="images/jw301__presentatie__intro.jpg"        as="image" />
-  <link rel="preload"    href="images/jw302__presentatie__kaag.jpg"         as="image" />
-  <link rel="preload"    href="images/jw401__tarieven__intro.jpg"           as="image" />
-  <link rel="preload"    href="images/jw601__over_mij__intro.jpg"           as="image" />
+  <link rel="preload"    href="images/jw004__index__logo__klaenk.png"       as="image" />
 </head>
 <body>
   <div id="jw-header-div">
@@ -75,7 +70,7 @@
   </div>
 
   <div class="jw-content-div">
-    Ik heb gewerkt met:<br/><br/>
+    Ik heb gewerkt met:<br/>
     <table width="100%" class="jw-logo-table">
       <tr>
         <td width="05%">&nbsp;</td>
@@ -124,9 +119,9 @@
 
   <script type="text/javascript">
     var jwLogoNr          = 1;
-    var jwLogoMax         = 7;
+    var jwLogoMax         = 8;
 
-    var jwLogoSrc         = new Array(jwLogoMax + 1); // [0..7]
+    var jwLogoSrc         = new Array(jwLogoMax + 1); // [0..max]
     var jwLogoAlt         = new Array(jwLogoMax + 1);
 
     jwLogoSrc[1]          = "abn_amro.png";          jwLogoAlt[1] = "abn amro";
@@ -136,6 +131,7 @@
     jwLogoSrc[5]          = "wise.png";              jwLogoAlt[5] = "wise";
     jwLogoSrc[6]          = "ihc.png";               jwLogoAlt[6] = "indisch herinneringscentrum";
     jwLogoSrc[7]          = "fbjp.png";              jwLogoAlt[7] = "fonds bijzondere journalistieke projecten";
+    jwLogoSrc[8]          = "klaenk.png";            jwLogoAlt[7] = "klaenk";
 
 
     var jwTestimonialNr   = 1;
@@ -168,7 +164,7 @@
       if( jwLogoNr <= 0         ) jwLogoNr = jwLogoMax;
       if( jwLogoNr >  jwLogoMax ) jwLogoNr = 1;
 
-      if( jwLogoSrc[jwLogoNr] === "ihc.png" || jwLogoSrc[jwLogoNr] === "fbjp.png" )
+      if( jwLogoSrc[jwLogoNr] === "ihc.png" || jwLogoSrc[jwLogoNr] === "fbjp.png" || jwLogoSrc[jwLogoNr] === "klaenk.png" )
         document.getElementById("jw_logo_content").innerHTML = "<img class='jw-content-logo-img-dbl-wide' src='images/jw004__index__logo__" + jwLogoSrc[jwLogoNr] + "' alt='" + jwLogoAlt[jwLogoNr] + "' />";
       else
         document.getElementById("jw_logo_content").innerHTML = "<img class='jw-content-logo-img'          src='images/jw004__index__logo__" + jwLogoSrc[jwLogoNr] + "' alt='" + jwLogoAlt[jwLogoNr] + "' />";
