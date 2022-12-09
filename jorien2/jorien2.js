@@ -2,7 +2,7 @@
 
 function updFooterVer()
 {
-  document.getElementById("jw-footer-tooltiptext").innerText = "v20221209.1715." + window.innerWidth + "x" + window.innerHeight;
+  document.getElementById("jw-footer-tooltiptext").innerText = "v20221209.2300." + window.innerWidth + "x" + window.innerHeight;
 }
 
 updFooterVer();

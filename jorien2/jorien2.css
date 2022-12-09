@@ -18,6 +18,7 @@ body                                { padding: 0px; margin: 0px; color: #535353;
 .jw-content-div-with-credit         { margin: 4%; width: 41%; font-family:sans-serif; text-align: center; vertical-align: top; display: inline-block; position: relative; }
 .jw-content-div-dbl-wide            { margin: 4%; width: 92%; font-family:sans-serif; text-align: left;   vertical-align: top; display: inline-block; }
 .jw-content-div-tariff              { margin: 4%; width: 92%; font-family:sans-serif; text-align: center; vertical-align: top; display: inline-block; }
+.jw-content-invisible-text          { margin: 4%; width: 41%; font-family:sans-serif; text-align: left;   vertical-align: top; display: inline; font-size: 14px; color: #F2F2F2; }
 .jw-content-logo-img                { opacity: 1.0; display: inline-block; margin: 2%; width: 7.5rem; height: 5rem; }
 .jw-content-logo-img-dbl-wide       { opacity: 1.0; display: inline-block; margin: 2%; width: 15rem ; height: 5rem; }
 
