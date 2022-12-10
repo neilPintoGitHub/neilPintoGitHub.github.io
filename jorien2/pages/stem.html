@@ -113,10 +113,15 @@
       if( jwDemoNr <= 0         ) jwDemoNr = jwDemoMax;
       if( jwDemoNr >  jwDemoMax ) jwDemoNr = 1;
 
-      if( jwDemoType[jwDemoNr] === "video/mov" )
-        document.getElementById("jw_stem_demo").innerHTML = "<video controls height='" + jwDemoHeight[jwDemoNr] + "' width='" + jwDemoWidth[jwDemoNr] + "' poster='../images/jw102__stem__profile_pic.jpg'><source src='../videos/" + jwDemoSrc[jwDemoNr] + "' /></video>";
+      if( jwDemoSrc[jwDemoNr] === "jw111__stem__land_van_ons.mp4#t=0.1" )
+        jwDemoPosterText = "";
       else
-        document.getElementById("jw_stem_demo").innerHTML = "<video controls height='" + jwDemoHeight[jwDemoNr] + "' width='" + jwDemoWidth[jwDemoNr] + "' poster='../images/jw102__stem__profile_pic.jpg'><source src='../videos/" + jwDemoSrc[jwDemoNr] + "' type='" + jwDemoType[jwDemoNr] + "' /></video>";
+        jwDemoPosterText = " poster='../images/jw102__stem__profile_pic.jpg'";
+
+      if( jwDemoType[jwDemoNr] === "video/mov" )
+        document.getElementById("jw_stem_demo").innerHTML = "<video controls height='" + jwDemoHeight[jwDemoNr] + "' width='" + jwDemoWidth[jwDemoNr] + "' " + jwDemoPosterText + "><source src='../videos/" + jwDemoSrc[jwDemoNr] + "' /></video>";
+      else
+        document.getElementById("jw_stem_demo").innerHTML = "<video controls height='" + jwDemoHeight[jwDemoNr] + "' width='" + jwDemoWidth[jwDemoNr] + "' " + jwDemoPosterText + "><source src='../videos/" + jwDemoSrc[jwDemoNr] + "' type='" + jwDemoType[jwDemoNr] + "' /></video>";
 
       document.getElementById("jw_stem_demo_label").innerHTML = "<b>" + jwDemoLabel[jwDemoNr] + "</b>";
     }
