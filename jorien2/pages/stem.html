@@ -45,8 +45,8 @@
 
   <div id="jw-image-banner-div">
     <img src="../images/jw101__stem__intro.jpg" width="100%" height="30%" />
-    <span id="jw-image-banner-line-1">Jorien Wallast</span>
-    <span id="jw-image-banner-line-2">Voice-over</span>
+    <h1>Jorien Wallast</h1>
+    <h2>Voice-over</h2>
   </div>
 
   <span id="jw-image-banner-line-1-alt"><b>Jorien Wallast</b></span>
@@ -58,8 +58,24 @@
     <br/><br/>Ik neem op in mijn thuisstudio of in een studio van je keuze. Op basis van je briefing krijg je binnen 24 uur meerdere opnamen om uit te kiezen. Zit de winnende take er nog niet bij? Geen probleem, in mijn tarief zitten altijd twee extra opname rondes inbegrepen.
   </div>
 
-  <br/>
+  <div class="jw-content-div-center">
+    voorbeeld: <span id="jw_stem_demo_label"><b>Voice Demo</b></span><br/>
+    <table width="100%" class="jw-demo-table">
+      <tr>
+        <td width="05%">&nbsp;</td>
+        <td width="10%" class="jw-arrows" onclick="jwShowDemo(-1);">&lt;</td>
+        <td width="70%" id="jw_stem_demo" style="background-color: #FFFFFF; vertical-align: middle; text-align: center;">
+          <video controls height="300" width="300">
+            <source src="../videos/jw111__stem__demo.mpeg" type="audio/mpeg" />
+          </video>
+        </td>
+        <td width="10%" class="jw-arrows" onclick="jwShowDemo(+1);">&gt;</td>
+        <td width="05%">&nbsp;</td>
+      </tr>
+    </table>
+  </div>
 
+  <br/>
   <div class="jw-content-invisible-text">
     voice-over vrouw stemacteur stemactrice betaalbare stem
   </div>
@@ -75,6 +91,38 @@
   </div>
 
   <script type="text/javascript" src="../jorien2.js"></script>
+
+  <script type="text/javascript">
+    var jwDemoNr     = 1;
+    var jwDemoMax    = 3;
+
+    var jwDemoSrc    = new Array(jwDemoMax + 1); // [0..max]
+    var jwDemoType   = new Array(jwDemoMax + 1);
+    var jwDemoLabel  = new Array(jwDemoMax + 1);
+    var jwDemoHeight = new Array(jwDemoMax + 1);
+    var jwDemoWidth  = new Array(jwDemoMax + 1);
+
+    jwDemoSrc[1]     = "jw111__stem__demo.mpeg";         jwDemoType[1] = "audio/mpeg";   jwDemoHeight[1] = "300";  jwDemoWidth[1] = "300";  jwDemoLabel[1] = "Voice Demo";
+    jwDemoSrc[2]     = "jw111__stem__land_van_ons.mp4";  jwDemoType[2] = "video/mp4";    jwDemoHeight[2] = "300";  jwDemoWidth[2] = "300";  jwDemoLabel[2] = "Land van Ons";
+    jwDemoSrc[3]     = "jw111__stem__podcast_oma.m4a";   jwDemoType[3] = "audio/x-m4a";  jwDemoHeight[3] = "300";  jwDemoWidth[3] = "300";  jwDemoLabel[3] = "Podcast : Mijn Oma de Soldaat";
+
+    function jwShowDemo(nr)
+    {
+      jwDemoNr = jwDemoNr + nr;
+
+      if( jwDemoNr <= 0         ) jwDemoNr = jwDemoMax;
+      if( jwDemoNr >  jwDemoMax ) jwDemoNr = 1;
+
+      if( jwDemoType[jwDemoNr] === "video/mov" )
+        document.getElementById("jw_stem_demo").innerHTML = "<video controls height='" + jwDemoHeight[jwDemoNr] + "' width='" + jwDemoWidth[jwDemoNr] + "'><source src='../videos/" + jwDemoSrc[jwDemoNr] + "' /></video>";
+      else
+        document.getElementById("jw_stem_demo").innerHTML = "<video controls height='" + jwDemoHeight[jwDemoNr] + "' width='" + jwDemoWidth[jwDemoNr] + "'><source src='../videos/" + jwDemoSrc[jwDemoNr] + "' type='" + jwDemoType[jwDemoNr] + "' /></video>";
+
+      document.getElementById("jw_stem_demo_label").innerHTML = "<b>" + jwDemoLabel[jwDemoNr] + "</b>";
+    }
+
+    jwShowDemo(0);
+  </script>
 
 </body>
 </html>
