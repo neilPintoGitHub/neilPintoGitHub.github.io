@@ -5,8 +5,8 @@ body                                { padding: 0px; margin: 0px; color: #535353;
 #jw-header-table                    { width: 100%; height: 100%; border: 0px; cellpadding: 0px; cellspacing: 0px; line-height: 1rem; }
 
 #jw-image-banner-div                { width: 100%; position: relative; margin-top: 3.3rem; -webkit-filter: grayscale(00%); filter: grayscale(00%); }
-#jw-image-banner-line-1             { font-family: "trebuchet ms", sans-serif; bottom: 3.50rem; font-size: 3.0rem; font-weight: 700; position: absolute; left: 4%; display: block; color: #FFFFFF; }
-#jw-image-banner-line-2             { font-family: tahoma         ,sans-serif; bottom: 1.25rem; font-size: 1.5rem; font-weight: 500; position: absolute; left: 4%; display: block; color: #FFFFFF; }
+h1                                  { font-family: "trebuchet ms", sans-serif; bottom: 3.50rem; font-size: 3.0rem; font-weight: 700; position: absolute; left: 4%; display: block; color: #FFFFFF; }
+h2                                  { font-family: tahoma         ,sans-serif; bottom: 1.25rem; font-size: 1.5rem; font-weight: 500; position: absolute; left: 4%; display: block; color: #FFFFFF; }
 
 #jw-image-banner-line-1-alt         { font-family: "trebuchet ms", sans-serif;                 font-size: 1.6rem; font-weight: 500;              margin-left: 4%; display: none;  color: #000000; visibility: hidden; }
 #jw-image-banner-line-2-alt         { font-family: "trebuchet ms", sans-serif;                 font-size: 1.2rem; font-weight: 300;              margin-left: 4%; display: none;  color: #000000; visibility: hidden; }
@@ -29,6 +29,7 @@ body                                { padding: 0px; margin: 0px; color: #535353;
 .jw-arrows                          { font-size: 2.0rem; font-weight: 200; color: #CCCCCC; font-family: sans-serif; text-align: center; vertical-align: top; -webkit-tap-highlight-color: transparent; }
 .jw-arrows:hover                    { font-size: 2.1rem; font-weight: 400; color: #444444; cursor: pointer; }
 .jw-logo-table td                   { text-align: center; vertical-align: middle; }
+.jw-demo-table td                   { text-align: center; vertical-align: middle; }
 .jw-testimonial-table               { background-color: #FFFFFF; }
 .jw-testimonial-1                   { font-family: tahoma, sans-serif; font-size: 1.3rem; text-align: center; vertical-align: top; font-style: italic; color: #888888; display: block; line-height: 1.8rem; margin-bottom: 0.6rem; }
 .jw-testimonial-2                   { font-family: tahoma, sans-serif; font-size: 1.1rem; text-align: center; vertical-align: top; font-style: bolder; color: #111111; display: block; line-height: 1.2rem; }
@@ -68,19 +69,19 @@ body                                { padding: 0px; margin: 0px; color: #535353;
 @media screen and (max-width: 1200px) {
   html                        { font-size: 3vmin; }
 
-  .jw-content-div             { width: 91%;       }
-  .jw-content-div-center      { width: 91%;       }
-  .jw-content-div-with-credit { width: 91%;       }
+  .jw-content-div             { width: 91%; }
+  .jw-content-div-center      { width: 91%; }
+  .jw-content-div-with-credit { width: 91%; }
 
-  #jw-main-menu               { display: none;    }
-  #jw-hamburger-menu          { display: inline;  }
+  #jw-main-menu               { display: none;   }
+  #jw-hamburger-menu          { display: inline; }
 }
 
 @media screen and (max-width: 600px) {
   html                        { font-size : 12px; }
 
-  #jw-image-banner-line-1     { display: none;                       }
-  #jw-image-banner-line-2     { display: none;                       }
+  h1                          { display: none; }
+  h2                          { display: none; }
   #jw-image-banner-line-1-alt { display: block; visibility: visible; }
   #jw-image-banner-line-2-alt { display: block; visibility: visible; }
 }
