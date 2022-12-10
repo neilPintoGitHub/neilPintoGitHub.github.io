@@ -102,9 +102,9 @@
     var jwDemoHeight = new Array(jwDemoMax + 1);
     var jwDemoWidth  = new Array(jwDemoMax + 1);
 
-    jwDemoSrc[1]     = "jw111__stem__demo.mpeg";               jwDemoType[1] = "audio/mpeg";   jwDemoHeight[1] = "300";  jwDemoWidth[1] = "300";  jwDemoLabel[1] = "Voice Demo";
-    jwDemoSrc[2]     = "jw111__stem__land_van_ons.mp4#t=0.1";  jwDemoType[2] = "video/mp4";    jwDemoHeight[2] = "300";  jwDemoWidth[2] = "300";  jwDemoLabel[2] = "Land van Ons";
-    jwDemoSrc[3]     = "jw111__stem__podcast_oma.m4a";         jwDemoType[3] = "audio/x-m4a";  jwDemoHeight[3] = "300";  jwDemoWidth[3] = "300";  jwDemoLabel[3] = "Podcast : Mijn Oma de Soldaat";
+    jwDemoSrc[1]     = "jw111__stem__demo.mpeg";             jwDemoType[1] = "audio/mpeg";   jwDemoHeight[1] = "300";  jwDemoWidth[1] = "300";  jwDemoLabel[1] = "Voice Demo";
+    jwDemoSrc[2]     = "jw111__stem__land_van_ons.mp4#t=0";  jwDemoType[2] = "video/mp4";    jwDemoHeight[2] = "300";  jwDemoWidth[2] = "300";  jwDemoLabel[2] = "Land van Ons";
+    jwDemoSrc[3]     = "jw111__stem__podcast_oma.m4a";       jwDemoType[3] = "audio/x-m4a";  jwDemoHeight[3] = "300";  jwDemoWidth[3] = "300";  jwDemoLabel[3] = "Podcast : Mijn Oma de Soldaat";
 
     function jwShowDemo(nr)
     {
@@ -113,8 +113,8 @@
       if( jwDemoNr <= 0         ) jwDemoNr = jwDemoMax;
       if( jwDemoNr >  jwDemoMax ) jwDemoNr = 1;
 
-      if( jwDemoSrc[jwDemoNr] === "jw111__stem__land_van_ons.mp4#t=0.1" )
-        jwDemoPosterText = "";
+      if( jwDemoSrc[jwDemoNr] === "jw111__stem__land_van_ons.mp4#t=0" )
+        jwDemoPosterText = " poster='../images/jw103__stem__land_van_ons.png'";
       else
         jwDemoPosterText = " poster='../images/jw102__stem__profile_pic.jpg'";
 
