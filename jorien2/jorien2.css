@@ -21,15 +21,17 @@ h2                                  { font-family: tahoma         ,sans-serif; b
 .jw-content-invisible-text          { margin: 4%; width: 41%; font-family:sans-serif; text-align: left;   vertical-align: top; display: inline; font-size: 14px; color: #F2F2F2; }
 .jw-content-logo-img                { opacity: 1.0; display: inline-block; margin: 2%; width: 7.5rem; height: 5rem; }
 .jw-content-logo-img-dbl-wide       { opacity: 1.0; display: inline-block; margin: 2%; width: 15rem ; height: 5rem; }
+.jw-stem-demo                       { background-color: #FFFFFF; vertical-align: middle; text-align: center; }
 
 #jw-tariff-table                    { border: 1px; border-collapse: collapse; margin: 0 auto; }
 #jw-tariff-table td                 { text-align: left; background-color: #FFFFFF; border: 1px solid #ddd; border-collapse: collapse; max-width: 50ch; overflow-wrap: break-word; }
 #jw-tariff-table .jw-tariff-hdr     { background-color: #5c875f; color: #eef7ef; }
 
-.jw-arrows                          { font-size: 2.0rem; font-weight: 200; color: #CCCCCC; font-family: sans-serif; text-align: center; vertical-align: top; -webkit-tap-highlight-color: transparent; }
+.jw-arrows                          { font-size: 2.0rem; font-weight: 200; color: #AAAAAA; font-family: sans-serif; text-align: center; vertical-align: top; -webkit-tap-highlight-color: transparent; }
 .jw-arrows:hover                    { font-size: 2.1rem; font-weight: 400; color: #444444; cursor: pointer; }
 .jw-logo-table td                   { text-align: center; vertical-align: middle; }
 .jw-demo-table td                   { text-align: center; vertical-align: middle; }
+.jw-demo-table .white-space      { width : 5%; }
 .jw-testimonial-table               { background-color: #FFFFFF; }
 .jw-testimonial-1                   { font-family: tahoma, sans-serif; font-size: 1.3rem; text-align: center; vertical-align: top; font-style: italic; color: #888888; display: block; line-height: 1.8rem; margin-bottom: 0.6rem; }
 .jw-testimonial-2                   { font-family: tahoma, sans-serif; font-size: 1.1rem; text-align: center; vertical-align: top; font-style: bolder; color: #111111; display: block; line-height: 1.2rem; }
@@ -67,25 +69,28 @@ h2                                  { font-family: tahoma         ,sans-serif; b
 }
 
 @media screen and (max-width: 1200px) {
-  html                        { font-size: 3vmin; }
+  html                          { font-size: 3vmin; }
 
-  .jw-content-div             { width: 91%; }
-  .jw-content-div-center      { width: 91%; }
-  .jw-content-div-with-credit { width: 91%; }
+  .jw-content-div               { width: 91%; }
+  .jw-content-div-center        { width: 91%; }
+  .jw-content-div-with-credit   { width: 91%; }
 
-  #jw-main-menu               { display: none;   }
-  #jw-hamburger-menu          { display: inline; }
+  .jw-demo-table .white-space                  { width : 1%; }
+  .jw-demo-table .jw-arrows                    { width : 5%; }
+
+  #jw-main-menu                 { display: none;   }
+  #jw-hamburger-menu            { display: inline; }
 }
 
 @media screen and (max-width: 600px) {
-  html                        { font-size : 12px; }
+  html                          { font-size : 12px; }
 
-  h1                          { display: none; }
-  h2                          { display: none; }
-  #jw-image-banner-line-1-alt { display: block; visibility: visible; }
-  #jw-image-banner-line-2-alt { display: block; visibility: visible; }
+  h1                            { display: none; }
+  h2                            { display: none; }
+  #jw-image-banner-line-1-alt   { display: block; visibility: visible; }
+  #jw-image-banner-line-2-alt   { display: block; visibility: visible; }
 }
 
 @media screen and (min-width: 1201px) {
-  html                        { font-size: 115%; line-height: 1.5rem; }
+  html                          { font-size: 115%; line-height: 1.5rem; }
 }
