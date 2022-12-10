@@ -62,15 +62,15 @@
     voorbeeld: <span id="jw_stem_demo_label"><b>Voice Demo</b></span><br/>
     <table width="100%" class="jw-demo-table">
       <tr>
-        <td width="05%">&nbsp;</td>
+        <td class="white-space"></td>
         <td width="10%" class="jw-arrows" onclick="jwShowDemo(-1);">&lt;</td>
-        <td width="70%" id="jw_stem_demo" style="background-color: #FFFFFF; vertical-align: middle; text-align: center;">
+        <td width="70%" id="jw_stem_demo">
           <video controls height="300" width="300">
             <source src="../videos/jw111__stem__demo.mpeg" type="audio/mpeg" />
           </video>
         </td>
         <td width="10%" class="jw-arrows" onclick="jwShowDemo(+1);">&gt;</td>
-        <td width="05%">&nbsp;</td>
+        <td class="white-space"></td>
       </tr>
     </table>
   </div>
@@ -114,9 +114,9 @@
       if( jwDemoNr >  jwDemoMax ) jwDemoNr = 1;
 
       if( jwDemoType[jwDemoNr] === "video/mov" )
-        document.getElementById("jw_stem_demo").innerHTML = "<video controls height='" + jwDemoHeight[jwDemoNr] + "' width='" + jwDemoWidth[jwDemoNr] + "'><source src='../videos/" + jwDemoSrc[jwDemoNr] + "' /></video>";
+        document.getElementById("jw_stem_demo").innerHTML = "<video controls height='" + jwDemoHeight[jwDemoNr] + "' width='" + jwDemoWidth[jwDemoNr] + "' poster='../images/jw102__stem__profile_pic.jpg'><source src='../videos/" + jwDemoSrc[jwDemoNr] + "' /></video>";
       else
-        document.getElementById("jw_stem_demo").innerHTML = "<video controls height='" + jwDemoHeight[jwDemoNr] + "' width='" + jwDemoWidth[jwDemoNr] + "'><source src='../videos/" + jwDemoSrc[jwDemoNr] + "' type='" + jwDemoType[jwDemoNr] + "' /></video>";
+        document.getElementById("jw_stem_demo").innerHTML = "<video controls height='" + jwDemoHeight[jwDemoNr] + "' width='" + jwDemoWidth[jwDemoNr] + "' poster='../images/jw102__stem__profile_pic.jpg'><source src='../videos/" + jwDemoSrc[jwDemoNr] + "' type='" + jwDemoType[jwDemoNr] + "' /></video>";
 
       document.getElementById("jw_stem_demo_label").innerHTML = "<b>" + jwDemoLabel[jwDemoNr] + "</b>";
     }
