@@ -49,10 +49,10 @@ h2                                  { font-family: tahoma         ,sans-serif; b
 #jw-main-menu #jw-main-menu-focused { text-decoration: none; color: #920305; font-weight: bolder; font-size: 1.0rem; }
 
 #jw-hamburger-input                 { display: none; }
-#jw-hamburger-side-menu             { visibility: hidden; position: fixed; top: 0px; right: 0px; font-size: 1.2rem; width: 10rem; background-color: #3D0E61; transition: 0.15s; padding: 0.5rem; box-sizing: border-box; }
+#jw-hamburger-side-menu             { visibility: hidden; position: fixed; top: 0px; right: 0px; font-size: 1.2rem; width: 10rem; background-color: #FFFFFF; transition: 0.15s; padding: 0.5rem; box-sizing: border-box; }
 #jw-hamburger-menu ul               { padding-left: 0px; }
 #jw-hamburger-menu li               { list-style-type: none; line-height: 2rem; text-transform: uppercase; }
-#jw-hamburger-menu a                { text-decoration: none; color: #B9FAF8; font-size: 1rem; }
+#jw-hamburger-menu a                { text-decoration: none; color: #000000; font-size: 1rem; }
 #jw-hamburger-menu a:hover          { text-decoration: underline; }
 #jw-hamburger-menu                  { display: none; z-index: 12; position: fixed; top: 0.25rem; right: 0.25rem; width: 2.5rem; height: 2.5rem; border: none; padding: 0px; margin: 0.25rem; font-family: sans-serif; background: linear-gradient( to bottom, #3D0E61, #3D0E61 20%, #FFFFFF 20%, #FFFFFF 40%, #3D0E61 40%, #3D0E61 60%, #FFFFFF 60%, #FFFFFF 80%, #3D0E61 80%, #3D0E61 100% ); }
 
